@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org">
+<title>Differences in files and how WinMerge handles them</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.7">
+<link rel="HOME" title="WinMerge 2.2 Manual" href="index.html">
+<link rel="PREVIOUS" title="Getting and installing WinMerge" href=
+"installing.html">
+<link rel="NEXT" title="Opening files and directories" href=
+"openpaths.html">
+</head>
+<body class="sect1" bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+vlink="#800080" alink="#FF0000">
+<div class="NAVHEADER">
+<table summary="Header navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="3" align="center">WinMerge 2.2 Manual</th>
+</tr>
+<tr>
+<td width="10%" align="left" valign="bottom"><a href=
+"installing.html" accesskey="P">Prev</a></td>
+<td width="80%" align="center" valign="bottom"></td>
+<td width="10%" align="right" valign="bottom"><a href=
+"openpaths.html" accesskey="N">Next</a></td>
+</tr>
+</table>
+<hr align="left" width="100%"></div>
+<div class="sect1">
+<h1 class="sect1"><a name="IntroDiff" id="IntroDiff">6. Differences
+in files and how WinMerge handles them</a></h1>
+<p>Introduction chapter says WinMerge finds and shows differences
+between files. So user compares two files one knows are different
+and gets surprised - WinMerge tells there is 5 differences, but
+there are more different words in one line! What is going on with
+WinMerge?</p>
+<p>Most natural way to show differences in text would be to show
+different characters and different words. And let user to check and
+copy these differences one by one. Like with spellchecker. That
+would be nice and easy if there are no many differences. But if we
+have long files with a lot of differences handling differences
+would become tedious work. Computers can handle that but not
+humans. So we need simpler and easier way to handle
+differences.</p>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN405" id="AEN405">6.1. What is a
+difference?</a></h2>
+<p>Solution is to forget single letter or word differences and use
+lines. Lines are basic units for many compare and text file
+handling tools. WinMerge's compare engine uses also lines as basic
+unit.</p>
+<p>Handling lines is a lot easier. If two texts to compare have few
+sigle different lines we are happy to handle them. But what if we
+have many consecutive different lines we don't want to copy those
+lines one by one.</p>
+<p>So we combine those consecutive different lines to single block.
+Now we can handle this one block (consisting of several lines) with
+one command.</p>
+<p>This block of different lines is called "difference" in
+WinMerge.</p>
+<p>Now we need simple example to get this all combined:</p>
+<div class="example"><a name="AEN412" id="AEN412"></a>
+<p><b>Example 1. Two files with multiple differences</b></p>
+<p>File1:</p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+WinMerge detects differences in lines,
+it does not look single characters.
+That's because lines are a lot easier and
+faster to compare and merge than characters.
+Believe or not.
+</pre></td>
+</tr>
+</table>
+<p>File2:</p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+WinMerge detects differences in lines,
+but it doesn't look for single characters.
+Believe or not.
+</pre></td>
+</tr>
+</table>
+</div>
+<p>Those two texts contain several differences in lines and several
+different lines, but only one difference that WinMerge shows for
+user. For WinMerge, difference is lines 2-4 in first file and line
+2 in second file. So WinMerge can show those lines as
+difference.</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN419" id="AEN419">6.2. Missing
+lines</a></h2>
+<p>In example 1 there are 3 different lines in file1 and 1
+different line in file2. In WinMerge differences must always have
+same amount of lines in both files. So WinMerge must add 2 empty
+lines to file2 so that both files have 3 different lines. We call
+these added empty lines as "missing lines" since they really don't
+exist in file2. Screenshot shows it:</p>
+<p><span class="inlinemediaobject"><img src=
+"screenshots/example1.gif"></span></p>
+<p>If text is typed or copy-pasted to missing lines they become
+real lines.</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN427" id="AEN427">6.3. Merging
+difference</a></h2>
+<p>So how those two files in example 1 can be made identical?
+Simply copying different lines from file to another. No need to
+care about single different characters, character offsets etc. Just
+lines.</p>
+<p>But copying every single line is still a lot of work. Like
+already mentioned WinMerge creates differences from sets of
+different files. Instead of copying single lines we can copy these
+differences. It is a lot easier and faster to copy 5 differences
+than 100 lines.</p>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN432" id="AEN432">6.3.1. Merging
+missing lines</a></h3>
+<p>But what about missing lines when merging? What happens to them?
+As mentioned earlier missing lines are not real lines. When copying
+lines WinMerge totally ignores missing lines. In example 1 we have
+missing lines:</p>
+<ul>
+<li>
+<p>Copy difference from file1 to file2 : WinMerge copies first line
+in difference in file2 with line in file1. Then WinMerge replaces
+two missing lines in file2 with real lines in file1.</p>
+</li>
+<li>
+<p>Copy difference from file2 to file1 : WinMerge copies first line
+in difference in file1 with line in file2. Then WinMerge would copy
+two missing lines from file2 to file1. But missing lines are not
+real lines and do not exist in files. So WinMerge removes two lines
+from file1.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top"><a href="installing.html"
+accesskey="P">Prev</a></td>
+<td width="34%" align="center" valign="top"><a href="index.html"
+accesskey="H">Home</a></td>
+<td width="33%" align="right" valign="top"><a href="openpaths.html"
+accesskey="N">Next</a></td>
+</tr>
+<tr>
+<td width="33%" align="left" valign="top">Getting and installing
+WinMerge</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">Opening files and
+directories</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

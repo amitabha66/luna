@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org">
+<title>Plugins</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.7">
+<link rel="HOME" title="WinMerge 2.2 Manual" href="index.html">
+<link rel="PREVIOUS" title="Locale support" href="locales.html">
+<link rel="NEXT" title="Filters" href="filters.html">
+</head>
+<body class="sect1" bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+vlink="#800080" alink="#FF0000">
+<div class="NAVHEADER">
+<table summary="Header navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="3" align="center">WinMerge 2.2 Manual</th>
+</tr>
+<tr>
+<td width="10%" align="left" valign="bottom"><a href="locales.html"
+accesskey="P">Prev</a></td>
+<td width="80%" align="center" valign="bottom"></td>
+<td width="10%" align="right" valign="bottom"><a href=
+"filters.html" accesskey="N">Next</a></td>
+</tr>
+</table>
+<hr align="left" width="100%"></div>
+<div class="sect1">
+<h1 class="sect1"><a name="Plugins" id="Plugins">13.
+Plugins</a></h1>
+<p>Plugins are extra-features for WinMerge. They are not included
+in the basic version because they interest few users, or because
+they do not fit in WinMerge architecture.</p>
+<p>Each plugin :</p>
+<ul>
+<li>
+<p>is a single file, either a dll or a scriptlet (extension
+<tt class="filename">.sct</tt>)</p>
+</li>
+<li>
+<p>is installed in the subdirectory "<tt class=
+"filename">MergePlugins</tt>".</p>
+</li>
+<li>
+<p>is easy to install : copy the plugin file in "<tt class=
+"filename">MergePlugins</tt>", close WinMerge if it is running, and
+launch it again</p>
+</li>
+</ul>
+<p>"<span class="guilabel">Plugins</span>" is a generic name for
+extra-feature dll or scriptlets. Plugins features are spread over
+three categories : file editor complement, unpacker, prediffer.</p>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1434" id="AEN1434">13.1. Three
+categories of plugins</a></h2>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1436" id="AEN1436">13.1.1. Editor
+complement</a></h3>
+<p>Operate custom operations on the currently selected text from
+the active pane.</p>
+<p>Example plugin : turn the selection to uppercase or
+lowercase.</p>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1440" id="AEN1440">13.1.2. Unpack
+(transform) a file to a text format</a></h3>
+<p>The original file is not changed. A temporary transformed file
+is created and loaded in WinMerge.</p>
+<p>Sometimes the transformed file can be packed back. Then you may
+merge and save the transformed file. Packing is done automatically
+in this case. See the plugin details to know if it supports packing
+back.</p>
+<p>Example plugin : decompress Delphi4 binary files (extension
+.dfm).</p>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p>When you compare directories, WinMerge doesn't need to display
+the files, but the diffing process can give a different result when
+you compare compressed and not compressed files (for example,
+uncompressed files may be identical, but the compressed files may
+differ if they include the date of creation). WinMerge applies the
+unpacker in all situations, and you are sure to have the same
+result when you compare directories, or when you merge two versions
+of a file.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1447" id="AEN1447">13.1.3. Prediff -
+Process files to hide some differences</a></h3>
+<p>The files are loaded normally. No change is applied to the
+displayed file. Copies are made and processed by the plugin, and
+the diffing algorithm operates on these copies.</p>
+<p>Example plugin : ignore the differences inside given columns,
+while displaying the characters in these columns.</p>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1451" id="AEN1451">13.2. Select and
+apply a plugin</a></h2>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1453" id="AEN1453">13.2.1.
+"<span class="guilabel">Suggested plugin</span>" and "<span class=
+"guilabel">Automatic mode</span>"</a></h3>
+<p>Each plugin specifies a list of file extensions (see plugins
+details for more info). When the file extension, either from the
+left or from the right file, matches the plugin list, the plugin is
+called "<span class="guilabel">a suggested plugin</span>".</p>
+<p>When "<span class="guilabel">Automatic mode</span>" is on,
+WinMerge searches for a suggested plugin and applies it if it is
+avaialble. When two suggested plugins are available for a file,
+WinMerge applies the first one only (alphabetical order).</p>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p>"<span class="guimenuitem">Automatic Unpacking</span>" and
+"<span class="guimenuitem">Auto prediffer</span>" are two separate
+options. There is no option for editor complements.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1465" id="AEN1465">13.2.2. Editor
+complement in directory view</a></h3>
+<p>Not available</p>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1468" id="AEN1468">13.2.3. Editor
+complement in editor view</a></h3>
+<p>Access list with main menu, <span class=
+"guimenu">Edit</span>-&gt;<span class=
+"guisubmenu">Scripts</span>-&gt;<span class=
+"guimenuitem">...</span></p>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1475" id="AEN1475">13.2.4. Unpacker
+in directory view</a></h3>
+<p>Check <span class="guimenu">Plugins</span>-&gt;<span class=
+"guimenuitem">Automatic Unpacking</span> in the main menu. Update
+the results (<b class="keycap">F5</b>). Each file is loaded again
+with its suggested unpacker and compared.</p>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1482" id="AEN1482">13.2.5. Unpacker
+in editor view</a></h3>
+<p>Three possibilities</p>
+<p>Open dialog : select the two files first. Then press the button
+"<span class="guibutton">Select</span>" right from the filed
+"<span class="guilabel">Unpacker</span>". WinMerge displays the
+standard dialog for unpacker selection. Use the top combobox to
+select the plugin. Two generic choices are available also :
+"<span class="guilabel">None</span>" and "<span class=
+"guilabel">Automatic</span>".</p>
+<p>From the directory view when <span class=
+"guimenu">Plugins</span>-&gt;<span class="guimenuitem">Automatic
+Unpacking</span> is checked : just double click to open the file.
+The suggested plugin used during the directory comparison is used
+to load the file in the editor.</p>
+<p>From the directory view, always : select one file, then main
+menu <span class="guimenu">Plugins</span>-&gt;<span class=
+"guimenuitem">Edit with Unpacker</span>. WinMerge displays the
+dialog for unpacker selection. Select an unpacker and press
+"<span class="guibutton">OK</span>", WinMerge opens the editor view
+and applies this unpacker to load the file. This plugin is
+forgotten when you close the editor view.</p>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1499" id="AEN1499">13.2.6. Prediffer
+in directory view</a></h3>
+<p>When the files are selected, right-click to open the context
+menu. Follow <span class="guimenuitem">Plugin
+Settings</span>-&gt;<span class="guisubmenu">Prediffer
+Settings</span> and select "<span class="guimenuitem">Auto
+prediffer</span>" or "<span class="guimenuitem">No
+prediffer</span>". Refresh the view (<b class="keycap">F5</b>) to
+update the results.</p>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p>"<span class="guimenuitem">Auto prediffer</span>" is a per-file
+option. Some files in the same directory can be in mode
+"<span class="guimenuitem">No prediffer</span>" and some in mode
+"<span class="guimenuitem">Auto prediffer</span>". When you change
+directory during a non-recursive compare, the mode is always reset
+to "<span class="guimenuitem">No prediffer</span>".</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1514" id="AEN1514">13.2.7. Prediffer
+in editor view</a></h3>
+<p>Two possibilities</p>
+<p>From the directory view when "<span class="guimenuitem">Auto
+prediffer</span>" is checked for a file : just double click to open
+the file. The plugin used during the directory comparison is used
+in the editor before the diff algorithm.</p>
+<p>During an editor session, access prediffer lists with menu
+<span class="guimenu">Plugins</span>-&gt;<span class=
+"guisubmenu">Prediffer</span>-&gt;<span class=
+"guimenuitem">...</span> The active prediffer is checked. Suggested
+plugins are indicated first above the not-suggested ones. The files
+are compared again after the selection, you don't need to
+rescan.</p>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1524" id="AEN1524">13.3. Plugin
+details</a></h2>
+<p>A file <tt class="filename">Plugins.txt</tt> is created during
+the setup process. It documents each installed plugin : category,
+suggested file extensions, whether pack is available for unpack
+plugins, quick description.</p>
+<p>If you don't use the <tt class="filename">setup.exe</tt>, the
+file is in the subdirectory "<tt class=
+"filename">MergePlugins</tt>" and called <tt class=
+"filename">list.txt</tt>.</p>
+<p>Developers may find information and code of examples in the
+source package, under the directory "<tt class=
+"filename">Plugins</tt>".</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1534" id="AEN1534">13.4. Windows
+Script Host</a></h2>
+<p>Some editor complements need this optional component from
+Microsoft.</p>
+<p>If the list of editor complements does not present all editor
+plugins, this component is probably missing.</p>
+<p>You can check easily. WinMerge informs you with a comment at the
+bottom of the list.</p>
+<p>You may install WSH on any version of Windows (need IE 4.0).
+Download it from <a href=
+"http://msdn.microsoft.com/library/default.asp?url=/downloads/list/webdev.asp"
+target="_top">MSDN Library</a>.</p>
+</div>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top"><a href="locales.html"
+accesskey="P">Prev</a></td>
+<td width="34%" align="center" valign="top"><a href="index.html"
+accesskey="H">Home</a></td>
+<td width="33%" align="right" valign="top"><a href="filters.html"
+accesskey="N">Next</a></td>
+</tr>
+<tr>
+<td width="33%" align="left" valign="top">Locale support</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">Filters</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

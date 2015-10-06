@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org">
+<title>Version control integration</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.7">
+<link rel="HOME" title="WinMerge 2.2 Manual" href="index.html">
+<link rel="PREVIOUS" title="Filters" href="filters.html">
+<link rel="NEXT" title="Commandline" href="commandline.html">
+</head>
+<body class="sect1" bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+vlink="#800080" alink="#FF0000">
+<div class="NAVHEADER">
+<table summary="Header navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="3" align="center">WinMerge 2.2 Manual</th>
+</tr>
+<tr>
+<td width="10%" align="left" valign="bottom"><a href="filters.html"
+accesskey="P">Prev</a></td>
+<td width="80%" align="center" valign="bottom"></td>
+<td width="10%" align="right" valign="bottom"><a href=
+"commandline.html" accesskey="N">Next</a></td>
+</tr>
+</table>
+<hr align="left" width="100%"></div>
+<div class="sect1">
+<h1 class="sect1"><a name="VersionControl" id="VersionControl">15.
+Version control integration</a></h1>
+<p>WinMerge provides basic integration with Visual SourceSafe and
+ClearCase version control systems. Integration means WinMerge
+checkouts file edited from version control. User can later checkin
+changed file with version control system's tools. WinMerge does not
+provide history or checkin tools.</p>
+<p>Version control support relies on fact that files in version
+control system are read-only in local disk. So if local file is
+read-only and version control integration is enabled WinMerge
+assumes file is version controlled and shows checkout dialog.</p>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1693" id="AEN1693">15.1. Visual
+SourceSafe</a></h2>
+<p>To enable Visual SourceSafe integration for version controlled
+directory:</p>
+<ol type="1">
+<li>
+<p>Enable Visual SourceSafe integration from <span class=
+"guimenu">Edit</span>-&gt;<span class=
+"guimenuitem">Options</span>+<span class="guilabel">Versioning
+System</span></p>
+</li>
+<li>
+<p>Open version controlled file/directory to WinMerge</p>
+</li>
+<li>
+<p>Edit version controlled file</p>
+</li>
+<li>
+<p>Save changes - now WinMerge detects file is read-only and
+assumes it is under version control. WinMerge shows following
+dialog:</p>
+</li>
+</ol>
+<p><span class="inlinemediaobject"><img src=
+"screenshots/sourcesafe1.gif"></span></p>
+<p>WinMerge searches for SourceSafe databases from system and fills
+them to first dropdown list in dialog. So you first have to select
+right database if there are more than one databases in your
+system.</p>
+<p>Project path is file path relative to SourceSafe database base
+path. Be careful with this since most errors are because of wrong
+project path. Keep in mind that when you change folder you have to
+change project path too!</p>
+<p>WinMerge remembers password for current session, but does not
+store it. So you don't need to retype password again in same
+session. But after closing WinMerge you have to retype password.
+This is to keep your password safe!</p>
+<p>Apply to all items -checkbox allows to checkout several files
+when copying files in directory compare. All files must reside in
+same directory to use this feature.</p>
+<p>Unfortunately, VSS is horribly silent about error conditions
+(other than the fact that one occurred). If an operation fails, one
+of the following conditions could be at fault:</p>
+<ul>
+<li>
+<p>Another user may have the file checked out with exclusive
+access</p>
+</li>
+<li>
+<p>You may have specified the wrong project</p>
+</li>
+<li>
+<p>You may have entered the project name incorrectly</p>
+</li>
+<li>
+<p>Did you use VSS path syntax (ie: <var class=
+"envar">$/MyProject/res</var>)</p>
+</li>
+<li>
+<p>Your connection to the VSS server computer may be hosed</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top"><a href="filters.html"
+accesskey="P">Prev</a></td>
+<td width="34%" align="center" valign="top"><a href="index.html"
+accesskey="H">Home</a></td>
+<td width="33%" align="right" valign="top"><a href=
+"commandline.html" accesskey="N">Next</a></td>
+</tr>
+<tr>
+<td width="33%" align="left" valign="top">Filters</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">Commandline</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

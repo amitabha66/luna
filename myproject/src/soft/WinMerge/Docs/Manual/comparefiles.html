@@ -1,0 +1,439 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org">
+<title>Comparing files</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.7">
+<link rel="HOME" title="WinMerge 2.2 Manual" href="index.html">
+<link rel="PREVIOUS" title="Comparing directories" href=
+"comparedirs.html">
+<link rel="NEXT" title="Options &amp; configuration" href=
+"configuration.html">
+</head>
+<body class="sect1" bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+vlink="#800080" alink="#FF0000">
+<div class="NAVHEADER">
+<table summary="Header navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="3" align="center">WinMerge 2.2 Manual</th>
+</tr>
+<tr>
+<td width="10%" align="left" valign="bottom"><a href=
+"comparedirs.html" accesskey="P">Prev</a></td>
+<td width="80%" align="center" valign="bottom"></td>
+<td width="10%" align="right" valign="bottom"><a href=
+"configuration.html" accesskey="N">Next</a></td>
+</tr>
+</table>
+<hr align="left" width="100%"></div>
+<div class="sect1">
+<h1 class="sect1"><a name="CompareFiles" id="CompareFiles">9.
+Comparing files</a></h1>
+<p>File compare window is basically two files opened to editor into
+two horizontal panes. Editing files is the big difference between
+1.7.1 and newer versions. Editing allows user to easily do small
+changes without need to open files to other editor or development
+environment.</p>
+<div class="tip">
+<table class="tip" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/tip.gif" hspace="5" alt="Tip"></td>
+<td align="left" valign="top">
+<p>If <span class="guilabel">Automatic rescan</span> is not enabled
+manual refresh is recommended after editing.</p>
+</td>
+</tr>
+</table>
+</div>
+<div class="mediaobject">
+<p><img src="screenshots/filecomp1.gif"></p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN846" id="AEN846">9.1. Showing the
+differences</a></h2>
+<p>WinMerge uses different (user configurable) colors to highlight
+and select differences. By default WinMerge shows different lines
+with yellow background and missing lines with gray background. If
+user selects the difference, it is shown with red background and
+missing lines with milder red.</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN849" id="AEN849">9.2. File
+headerbar</a></h2>
+<p>File headerbar has many functionalities. See screenshot
+below:</p>
+<p><span class="inlinemediaobject"><img src=
+"screenshots/File_headerbar1.jpg"></span></p>
+<p>Firstly, headerbar shows filename and full path for file.
+Headerbar also shows:</p>
+<ul>
+<li>
+<p>current active file with sunken border (like in screenshot),
+non-active file is shown with flat headerbar.</p>
+</li>
+<li>
+<p>if file has unsaved changes. This is indicated by adding
+asterisk (<span class="guilabel">*</span>) before filename, like in
+screenshot.</p>
+</li>
+</ul>
+<p>Headerbar also has context menu with items to copy full path or
+filename to clipboard.</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN864" id="AEN864">9.3.
+Statusbar</a></h2>
+<p><span class="inlinemediaobject"><img src=
+"screenshots/filecomp_statusbar1.gif"></span></p>
+<p>Statusbar upper line shows information about current line. In
+first pane:</p>
+<ul>
+<li>
+<p><span class="guilabel">Ln</span> : current linenumber</p>
+</li>
+<li>
+<p><span class="guilabel">Col</span>: current column for cursor and
+total number of columns in line</p>
+</li>
+<li>
+<p><span class="guilabel">Ch</span> : current char for cursor and
+total number of chars in line</p>
+</li>
+<li>
+<p><span class="guilabel">EOL</span> : current line EOL style
+(shown only when <span class="guilabel">Preserve original EOL
+chars</span>-option is enabled)</p>
+</li>
+</ul>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p><span class="guilabel">Col</span> counts <b class=
+"keycap">TAB</b> as <var class="replaceable">X</var> chars (as
+defined in editor options) and <span class="guilabel">Ch</span>
+counts <b class="keycap">TAB</b> as one.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Next two panes show <span class="guilabel">RO</span> if file is
+protected and file's EOL style ("<span class=
+"guilabel">DOS</span>/<span class=
+"guilabel">UNIX</span>/<span class="guilabel">MAC</span>"). Note
+these two different ways to show EOL style. When per-line EOL style
+is not remembered, EOL style is shown on own pane in statusbar. And
+when per-line EOL style is remembered line's EOL style is shown
+after char number. When per-line EOL style is used there is no
+file-wide EOL style.</p>
+<p>Difference between column and char is that column counts
+tabulator chararcter as so many (space) chars as it occupies (4 by
+default, can be changed from options). But char count counts
+tabulator char as one char.</p>
+<p>Lower line in statusbar shows current difference and amount of
+differences. Text can be:</p>
+<ul>
+<li>
+<p><span class="guilabel">Identical</span> : files are identical
+there are no differences</p>
+</li>
+<li>
+<p><span class="guilabel">X differences</span> : amount of
+differences, no difference is selected</p>
+</li>
+<li>
+<p><span class="guilabel">Difference X of Y</span> : amount of
+differences (<span class="guilabel">Y</span>) and number of
+selected difference (<span class="guilabel">X</span>)</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN911" id="AEN911">9.4. Difference
+navigation</a></h2>
+<p>Difference navigation commands are in <span class=
+"guimenu">Merge</span> menu:</p>
+<p><span class="inlinemediaobject"><img src=
+"screenshots/Merge_menu.jpg"></span></p>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN919" id="AEN919">9.4.1. Selecting a
+difference</a></h3>
+<p>Before difference can be merged, it must be selected. Selecting
+can happen by difference navigation keys/items (see below) or by
+selecting wanted difference directly:</p>
+<ul>
+<li>
+<p>Double-click over difference with mouse</p>
+</li>
+<li>
+<p>Move cursor inside difference and select it with <span class=
+"guimenuitem">Current Difference</span>.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN928" id="AEN928">9.4.2. Navigating
+differences</a></h3>
+<p><span class="guimenu">Merge</span>-menu has items for navigating
+to next/previous and first/last difference. Navigation is always
+done based on current cursor location. So <span class=
+"guimenuitem">Next Difference</span>-command selects next
+difference from cursor, not from current selected difference.</p>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p>When difference is selected with navigation commands cursor is
+moved to begin of first line of difference. In both files.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN935" id="AEN935">9.4.3. <span class=
+"guimenuitem">Current Difference</span>-command</a></h3>
+<p>This command has two important functions:</p>
+<ul>
+<li>
+<p>When there is no difference selected and cursor is inside
+difference, it selects this difference. This is very handy way to
+select difference from keyboard.</p>
+</li>
+<li>
+<p>When there is selected difference, it scrolls to selected
+difference. This is handy if user has scrolled selected difference
+out of screen. So this allows user to scroll files to see other
+contents and quickly return back to selected difference.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN944" id="AEN944">9.4.4. Go To line or
+difference</a></h3>
+<p>Using <span class="guimenuitem">Go To</span> from <span class=
+"guimenu">Edit</span>-menu user can jump to certain line or
+difference. Go To -dialog prefills current line and side to Go To
+-dialog.</p>
+<div class="tip">
+<table class="tip" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/tip.gif" hspace="5" alt="Tip"></td>
+<td align="left" valign="top">
+<p>Go To line number is useful if there is need to merge same
+change to several target files from one original file. Rather than
+using <span class="guimenuitem">Find</span> or difference
+navigation it is faster to jump to first line of difference.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN952" id="AEN952">9.4.5. Merge
+mode</a></h3>
+<p>Merge mode can be enabled from the <span class=
+"guimenu">File</span>-menu. It restores the WinMerge 1.7.1 single
+keys for difference merging and navigating:</p>
+<ul>
+<li>
+<p><b class="keycap">Up-</b> and <b class="keycap">Down arrow</b>
+keys select previous and next difference</p>
+</li>
+<li>
+<p><b class="keycap">Left-</b> and <b class="keycap">Right
+arrow</b> keys merge difference to left side or right side.</p>
+</li>
+</ul>
+<p>Unlike the normal mode, in this schema the <b class=
+"keycap">Alt</b>-key is not needed for these basic operations
+(which makes them quicker and more convenient). Note that <b class=
+"keycap">Shift</b>-<b class="keycap">Arrow</b>, <b class=
+"keycap">Alt</b>-<b class="keycap">Arrow</b> and <b class=
+"keycap">Ctrl</b>-<b class="keycap">Alt</b>-<b class=
+"keycap">Arrow</b> keys work in merge mode like in normal mode.</p>
+<p>When merge mode is enabled <span class="guilabel">Merge</span>
+text is shown in statusbar.</p>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN979" id="AEN979">9.5. Merging
+differences</a></h2>
+<p>Merging commands are located in <span class=
+"guimenu">Merge</span>-menu after navigation commands. Basically
+there are only two types of merging commands - copy difference from
+right to left and copy difference from left to right. Additional
+commands make merging several differences easier.</p>
+<p><span class="guimenuitem">Copy to Right</span> and <span class=
+"guimenuitem">Copy to Left</span> copy difference from side to
+side. At simplest this means replacing text in destination
+difference with text in source difference. But because difference
+can contain also removed lines, new lines may be created or some
+lines removed.</p>
+<p>WinMerge rescans files after every merging operation. This is
+done to ensure differences were copied correctly and all changes
+after last rescanning are taken care of. If <span class=
+"guilabel">Automatic rescan</span>-option is not set, user may have
+edited files and differences may not have shown correctly before
+merging. If result of merging is not what were wanted, user can
+undo merging operation.</p>
+<div class="important">
+<table class="important" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/important.gif" hspace="5" alt="Important"></td>
+<td align="left" valign="top">
+<p>It is strongly adviced to run <span class=
+"guimenuitem">Rescan</span> (<b class="keycap">F5</b>) before
+merging differences if <span class="guilabel">Automatic
+rescan</span> is set off.</p>
+</td>
+</tr>
+</table>
+</div>
+<p><span class="guimenuitem">Copy to Right/Left and
+Advance</span>-commands merge current difference and then select
+next difference (if there is one). Using these commands makes
+merging several differences easier and faster.</p>
+<p><span class="guimenuitem">Copy All to Right/Left</span>-commands
+sync two open files merging all differences.</p>
+<p><span class="guimenuitem">Copy diffs in Left/Right selection to
+Right/Left</span>-commands allow user to select several differences
+and merge them in one command. User can even select whole file and
+then merge all differences with one command. These commands are
+handy when there are several small differences that should be
+merged. Its easier and faster to select those differences first and
+then merge with these commands than merging those differences one
+by one.</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN999" id="AEN999">9.6.
+Refreshing</a></h2>
+<p>Refreshing updates differences after changes are made to files.
+Its important to do refresh before merging changes between
+files.</p>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p>Refresh does not reload file. That means, if another programs
+has updated files etc, those changes are not seen. Refresh updates
+differences according changes user has done.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1004" id="AEN1004">9.7. View
+whitespaces</a></h2>
+<p>When enabled from <span class="guimenu">View</span> menu
+<span class="guimenuitem">View Whitespace</span> feature shows all
+whitespace characters (spaces, tabulators, line ends). This is very
+useful for example when there are spaces in other file and
+tabulators in other. Also, if <span class="guilabel">Preserve
+original EOL chars</span> is enabled, WinMerge shows type of EOL
+(<span class="guilabel">DOS</span>/<span class=
+"guilabel">UNIX</span>/<span class="guilabel">MAC</span>).</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1013" id="AEN1013">9.8. Editing
+files</a></h2>
+<p>Normal editing features work in WinMerge editor. User can type
+and delete text, select text, copy, cut and paste text etc. There
+is some customisation because there can be removed lines in files
+(lines existing only in other side). Anyway these customisations
+are not usually visible to users otherwise that lines can sometimes
+"jump" when WinMerge has to relocate matching/non-matching
+files.</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1016" id="AEN1016">9.9. Difference
+inside line</a></h2>
+<p>Many times it is useful to see exact differences inside lines.
+WinMerge can highlight different area between lines. This feature
+is called <span class="guilabel">Highlight File Diff</span>. It is
+available in <span class="guimenu">Edit</span>-menu, toolbar and
+shortcut key (<b class="keycap">F4</b>). In screenshot below there
+is one difference highlighted. First time whole difference area in
+one line is highlighted. Repeating cycles through individual
+changed words.</p>
+<div class="mediaobject">
+<p><img src="screenshots/linediff.gif"></p>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1025" id="AEN1025">9.10. Context
+menu</a></h2>
+<p>File compare context menu contains items for frequently used
+features:</p>
+<p><span class="inlinemediaobject"><img src=
+"screenshots/filecomp_context1.gif"></span></p>
+<p>All these items work like selected from main menu.</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1033" id="AEN1033">9.11.
+Fonts</a></h2>
+<p>Font used by editor can be changed from <span class=
+"guimenu">View</span>-&gt;<span class="guimenuitem">Select
+Font...</span>. Due to limitations in the editor, only fixed width
+fonts are supported in WinMerge.</p>
+<p>Font suggestions for use of WinMerge with East Asian
+languages:</p>
+<ul>
+<li>
+<p>Simplified Chinese texts with the <span class=
+"guilabel">SimSun</span> or <span class="guilabel">SimHei</span>
+fixed-width fonts</p>
+</li>
+<li>
+<p>Traditional Chinese texts with the <span class=
+"guilabel">MingLiU</span> fixed-width font, or</p>
+</li>
+<li>
+<p>Japanese texts with the <span class="guilabel">MS Gothic</span>
+or <span class="guilabel">MS Mincho</span> fixed-width fonts</p>
+</li>
+<li>
+<p>Korean texts with the <span class="guilabel">GulimChe</span>
+fixed-width font (not Gulim as this variant uses
+proportional-spacing glyphs that are not centered in grid cells and
+then poorly aligned in fixed-width mode)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top"><a href=
+"comparedirs.html" accesskey="P">Prev</a></td>
+<td width="34%" align="center" valign="top"><a href="index.html"
+accesskey="H">Home</a></td>
+<td width="33%" align="right" valign="top"><a href=
+"configuration.html" accesskey="N">Next</a></td>
+</tr>
+<tr>
+<td width="33%" align="left" valign="top">Comparing
+directories</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">Options &amp;
+configuration</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

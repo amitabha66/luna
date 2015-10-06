@@ -1,0 +1,425 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org">
+<title>Filters</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.7">
+<link rel="HOME" title="WinMerge 2.2 Manual" href="index.html">
+<link rel="PREVIOUS" title="Plugins" href="plugins.html">
+<link rel="NEXT" title="Version control integration" href=
+"versioncontrol.html">
+</head>
+<body class="sect1" bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+vlink="#800080" alink="#FF0000">
+<div class="NAVHEADER">
+<table summary="Header navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="3" align="center">WinMerge 2.2 Manual</th>
+</tr>
+<tr>
+<td width="10%" align="left" valign="bottom"><a href="plugins.html"
+accesskey="P">Prev</a></td>
+<td width="80%" align="center" valign="bottom"></td>
+<td width="10%" align="right" valign="bottom"><a href=
+"versioncontrol.html" accesskey="N">Next</a></td>
+</tr>
+</table>
+<hr align="left" width="100%"></div>
+<div class="sect1">
+<h1 class="sect1"><a name="Filters" id="Filters">14.
+Filters</a></h1>
+<p>There are two kinds of filters in WinMerge: file filters for
+filtering files and directories in directory compare and line
+filters for ignoring lines from files before comparing.</p>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1544" id="AEN1544">14.1. Regular
+expressions</a></h2>
+<p>Filters are based on regular expressions (regexps). Each line
+filter or file filter rule is regexp which is matched against
+file/directory name or line.</p>
+<p>Regexps can be very complex to read. Luckily most file filtering
+needs are for file extensions. Filters installed with WinMerge show
+how to filter file extensions.</p>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1548" id="AEN1548">14.1.1. Help with
+regexps</a></h3>
+<p>There are many guides and help sites in Web:</p>
+<div class="variablelist">
+<dl>
+<dt>Good site devoted for regexps:</dt>
+<dd>
+<p><a href="http://www.regular-expressions.info/" target=
+"_top">http://www.regular-expressions.info/</a></p>
+</dd>
+<dt>Good HOWTO document for regexps:</dt>
+<dd>
+<p><a href="http://www.amk.ca/python/howto/regex/" target=
+"_top">http://www.amk.ca/python/howto/regex/</a></p>
+</dd>
+<dt>Tutorial:</dt>
+<dd>
+<p><a href=
+"http://www.zvon.org/other/PerlTutorial/Output/index.html" target=
+"_top">http://www.zvon.org/other/PerlTutorial/Output/index.html</a></p>
+</dd>
+<dt>PDF quick reference:</dt>
+<dd>
+<p><a href="http://gmckinney.info/resources/regex.pdf" target=
+"_top">http://gmckinney.info/resources/regex.pdf</a></p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1572" id="AEN1572">14.2. File
+filters</a></h2>
+<p>File filter is set of rules saved to one file. Every file and
+directory is tested against all there rules before comparing.
+Depending if filter is exclusive of inclusive file or directory
+matching is excluded from or included to compare.</p>
+<div class="tip">
+<table class="tip" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/tip.gif" hspace="5" alt="Tip"></td>
+<td align="left" valign="top">
+<p>Ignored items have "<span class="guilabel">Skipped</span>"
+status in directory compare. User can select them to visible or
+hidden from <span class="guimenu">View</span> menu. Usually its
+wise to keep skipped items hidden.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>WinMerge's filtering system allows only one filter set to be
+active at a time. Active filter set can be selected from
+Open-dialog or from menu: <span class=
+"guimenu">Tools</span>-&gt;<span class=
+"guimenuitem">Filters</span>. Also empty filter can be selected
+when no directories or files are ignored.</p>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN1583" id="AEN1583">14.2.1. Filter
+files</a></h3>
+<p>Filter files are normal ASCII files, with <tt class=
+"filename">.flt</tt> extension. Filter files must be placed to
+either:</p>
+<ul>
+<li>
+<p>"<tt class="filename">Filters</tt>" subdirectory in WinMerge
+program directory. This is recommended place.</p>
+</li>
+<li>
+<p>"<tt class="filename">Winmerge/Filters</tt>" subdirectory in
+user profile. This can be used for user personal filter when there
+are many users. Or if backupping from profile directory is wanted
+etc.</p>
+</li>
+</ul>
+<p>First part of filter file defines name and basic functionality
+of the filter:</p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+name: Example filter
+def: include
+</pre></td>
+</tr>
+</table>
+where <code class="constant">def</code>: is:
+<ul>
+<li>
+<p><code class="constant">include</code> - inclusive filter. This
+filter type filters out files and directories that match rules in
+filter.</p>
+</li>
+<li>
+<p><code class="constant">exclude</code> - exclusive filter. This
+filter type lets through files and directories that match rules in
+filter.</p>
+</li>
+</ul>
+When using exclusive filter its worth noting that the filter must
+contain rule to include all wanted subdirectories. Usually its wise
+to use this rule to include all subdirectories:
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+d: \\*$ ## Subdirectories
+</pre></td>
+</tr>
+</table>
+<p>There can be one filter rule in one line. And rule cannot be
+split to several lines. Common format for one filter line is like
+this:</p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+f: \.ext$ ## Match files *.ext
+</pre></td>
+</tr>
+</table>
+<p>or</p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+d: \\directory$ ## Match given directory name
+</pre></td>
+</tr>
+</table>
+<p>Rule begins with "<code class="constant">f:</code>" if it
+matches for filenames and "<code class="constant">d:</code>" if it
+matches for directory names. Filenames are given to filter as is,
+there are no special characters added. But for directory names
+there must be "<code class="constant">\\</code>" in begin of
+directory name. This is done clearly to separate directory names
+and filenames. "<code class="constant">##</code>" is a comment
+separator, all characters in line after that are ignored by
+WinMerge.</p>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p>File filter rules are case-insensitive. Rule <code class=
+"constant">.\bat$</code> matches to <tt class=
+"filename">winmerge.bat</tt> and <tt class=
+"filename">compare.BAT</tt>.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>So simple filters can be for example:</p>
+<div class="example"><a name="AEN1622" id="AEN1622"></a>
+<p><b>Example 6. Simple filefilter rules</b></p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+f: \.cpp$ ## Match *.cpp files
+f: \.h$ ## Match *.h files
+f: ^My ## Match My*.* files
+f: Dlg\. ## Match *Dlg.* files
+d: \\test$ ## Match 'test' directories
+</pre></td>
+</tr>
+</table>
+</div>
+<p>Line begin or -end marker (<code class="constant">"^"</code> or
+<code class="constant">"$"</code>) is usually required filter to
+work correctly. Dot in filename must be "escaped" with <code class=
+"constant">"\"</code> so <code class="constant">"\."</code> means
+dot in filename.</p>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p>Don't forget "<code class="constant">$</code>" at end. It marks
+end of directory- or filename and without it rule may not work like
+expected. While "<var class="literal">\.c$</var>" matches with only
+filenames having extension <tt class="filename">.c</tt>
+"<var class="literal">\.c</var>" matches all extensions beginning
+with "<var class="literal">c</var>" (<tt class=
+"filename">.cpp</tt>, <tt class="filename">.com</tt>, etc).</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Since file filter rules are regular expressions more complex
+rules are also possible. Following few rules show some
+possibilities for more complex rules:</p>
+<div class="example"><a name="AEN1640" id="AEN1640"></a>
+<p><b>Example 7. More complex file filter rules</b></p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+f: ^\.#.*$ ## .#filename.version files
+f: Dlg\.c(pp)?$ ## *Dlg.c &amp; *Dlg.cpp files
+f: ^I.*\.h$ ## I*.h files
+f: Srv[1-9]\.def$ ## *Srv1.def - *Srv9.def files
+f: ^[h,k,m] ## h*.* &amp; k*.* &amp; m*.* files
+</pre></td>
+</tr>
+</table>
+</div>
+<p>WinMerge ignores most whitespace characters in rules definition
+lines. However comment must always start with one or more
+whitespace character (space or tabulator) and comment-marker
+(<code class="constant">##</code>). <code class=
+"constant">##</code> can be used as part of rule if there is no
+whitespace character before it.</p>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1646" id="AEN1646">14.3. Line
+filters</a></h2>
+<p>Line filters can be used to ignore single lines from compared
+files. Line filters are handy when user doesn't want to compare
+comments or certain generated code. For example version control
+system (time)stamps.</p>
+<div class="important">
+<table class="important" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/important.gif" hspace="5" alt="Important"></td>
+<td align="left" valign="top">
+<p>Line filter rule ignores single line it matches. It is not
+possible to ignore partial lines or several lines with file filter
+rule.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>In file compare ignored lines are shown with own colors to
+differentiate them from other differences. User can see these
+differences but cannot select or merge them.</p>
+<p>Line filter rules are regular expressions like file filter
+rules. Since filter matches if any part of line matches it is
+usually recommended to add begin (<code class=
+"constant">"^"</code>) or end (<code class="constant">"$"</code>)
+marker to rule. Or both markers if exact line is wanted to
+filtered.</p>
+<p>Rules can be added and edited in Filters-dialog (Menu:
+<span class="guimenu">Tools</span>-&gt;<span class=
+"guimenuitem">Filters</span>). In editbox, give one rule per line.
+Compare results are not updated automatically after changing line
+filter rules. User can update compare results by selecting
+<span class="guimenu">Edit</span>-&gt;<span class=
+"guimenuitem">Refresh</span> or <b class="keycap">F5</b>.</p>
+<div class="example"><a name="AEN1663" id="AEN1663"></a>
+<p><b>Example 8. Some example line filters</b></p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+^MYTAG$
+</pre></td>
+</tr>
+</table>
+<p>- Filters out lines being exactly <code class=
+"constant">"MYTAG"</code></p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+^::
+</pre></td>
+</tr>
+</table>
+<p>- Filters out lines beginning with <code class=
+"constant">"::"</code></p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+^/\**.\*/$
+</pre></td>
+</tr>
+</table>
+<p>- Filters out lines beginning with <code class=
+"constant">"/*"</code> and ending with <code class=
+"constant">"*/"</code></p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+^[1-5]00
+</pre></td>
+</tr>
+</table>
+<p>- Filters out lines beginning with numbers 100, 200, 300, 400
+&amp; 500</p>
+</div>
+<div class="example"><a name="AEN1677" id="AEN1677"></a>
+<p><b>Example 9. Line filter rule matching CVS "Id:"
+-lines:</b></p>
+<p>Id-lines are like this:</p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+// $Id: Filters.xml,v 1.6.2.5 2005/01/22 15:37:15 kimmov Exp $
+</pre></td>
+</tr>
+</table>
+<p>And they can be filtered with rule:</p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+^// \WId: .*\$
+</pre></td>
+</tr>
+</table>
+</div>
+<div class="example"><a name="AEN1683" id="AEN1683"></a>
+<p><b>Example 10. Filter out line number comments in po
+files:</b></p>
+<p>po line number comments are like this:</p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+#: src/filename.c:766
+</pre></td>
+</tr>
+</table>
+<p>And they can be filtered out with rule:</p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+^#
+</pre></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top"><a href="plugins.html"
+accesskey="P">Prev</a></td>
+<td width="34%" align="center" valign="top"><a href="index.html"
+accesskey="H">Home</a></td>
+<td width="33%" align="right" valign="top"><a href=
+"versioncontrol.html" accesskey="N">Next</a></td>
+</tr>
+<tr>
+<td width="33%" align="left" valign="top">Plugins</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">Version control
+integration</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

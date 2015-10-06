@@ -1,0 +1,545 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org">
+<title>Comparing directories</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.7">
+<link rel="HOME" title="WinMerge 2.2 Manual" href="index.html">
+<link rel="PREVIOUS" title="Opening files and directories" href=
+"openpaths.html">
+<link rel="NEXT" title="Comparing files" href="comparefiles.html">
+</head>
+<body class="sect1" bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+vlink="#800080" alink="#FF0000">
+<div class="NAVHEADER">
+<table summary="Header navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="3" align="center">WinMerge 2.2 Manual</th>
+</tr>
+<tr>
+<td width="10%" align="left" valign="bottom"><a href=
+"openpaths.html" accesskey="P">Prev</a></td>
+<td width="80%" align="center" valign="bottom"></td>
+<td width="10%" align="right" valign="bottom"><a href=
+"comparefiles.html" accesskey="N">Next</a></td>
+</tr>
+</table>
+<hr align="left" width="100%"></div>
+<div class="sect1">
+<h1 class="sect1"><a name="CompareDirs" id="CompareDirs">8.
+Comparing directories</a></h1>
+<p>The Directory compare window displays all of the files and
+subdirectories compared in a sortable list view. Files and
+subdirectories may be synchronized by copying or deleting, and
+actions may be performed on multiple items simultaneously. The
+columns displayed may be changed and reordered.</p>
+<div class="mediaobject">
+<p><img src="screenshots/dircomp1.gif"></p>
+</div>
+<p>Directory comparison has two different modes. The mode is
+selected in the Open dialog with the "<span class=
+"guilabel">Include Subfolders</span>"-checkbox.</p>
+<ul>
+<li>
+<p>When subfolders are included, all subfolders and their contents
+are compared. Files are displayed depending on the options on the
+<span class="guimenu">View</span> menu (eg, <span class=
+"guimenuitem">Show Identical Files</span>). Common directories are
+never displayed (but all files inside of them are). Directories
+only existing on one side are displayed according to the
+<span class="guimenu">View</span> menu options (eg, <span class=
+"guimenuitem">Show Left Unique Files</span>).</p>
+<p>This mode does not allow browsing folders and can be slow if
+there are many subfolders and files.</p>
+</li>
+<li>
+<p>When subfolders are not included only files in selected folders
+and names of subfolders are shown.</p>
+<p>This mode allows browsing folders by opening subfolders and
+parent folders. This mode has the advantage of speed, as it may be
+much faster when there are many subfolders that need not be
+examined. Also the display may be easier to manage, showing only
+items in one folder.</p>
+</li>
+</ul>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN569" id="AEN569">8.1. Directory
+compare statepane</a></h2>
+<p>During directory compare proceeds, following statepane is
+shown:</p>
+<div class="mediaobject">
+<p><img src="screenshots/Dircomp_status1.gif"></p>
+</div>
+<p>Directory compare can be stopped by selecting "<span class=
+"guibutton">Stop</span>"-button and results for files and
+directories compared so far are shown. After directory compare
+finishes, "<span class="guibutton">Stop</span>" button text is
+changed to "<span class="guibutton">Press any key</span>". Now
+statepane can be closed by selecting that button or pressing any
+key from keyboard.</p>
+<p>Statepane can be opened from <span class=
+"guimenu">View</span>-menu again if needed. Statepane always shows
+current status of compare so it can be used to verify there are no
+different files left to handle.</p>
+<div class="tip">
+<table class="tip" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/tip.gif" hspace="5" alt="Tip"></td>
+<td align="left" valign="top">
+<p>Enable option "<span class="guilabel">Close Compare statepane
+automatically</span>" and statepane closes automatically after
+compare is ready.</p>
+</td>
+</tr>
+</table>
+</div>
+<div class="mediaobject">
+<p><img src="screenshots/Dircomp_status2.gif"></p>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN589" id="AEN589">8.2. Compare
+results</a></h2>
+<p>Files and directories are compared and divided into several
+categories:</p>
+<table border="0">
+<tbody>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/equal.gif"></span> Identical text files</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/notequal.gif"></span> Differing text files</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/binary.gif"></span> Identical binary files</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/binarydiff.gif"></span> Differing binary files</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/lfolder.gif"></span> Left-only folders</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/rfolder.gif"></span> Right-only folders</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/lfile.gif"></span> Left-only files</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/rfile.gif"></span> Right-only files</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/folderskip.gif"></span> Skipped directories (filtered
+out)</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/fileskip.gif"></span> Skipped files (filtered
+out)</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/error.gif"></span> Directories &amp; files that
+couldn't be compared. This usually happens when other program has
+locked the file.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN637" id="AEN637">8.3. Selecting files
+to show</a></h2>
+<p>In "<span class="guimenu">View</span>" menu there are several
+choises for selecting which categories listed above to
+show/hide.</p>
+<ul>
+<li>
+<p><span class="guimenuitem">Show identical files</span> : shows
+and hides files detected as identical</p>
+</li>
+<li>
+<p><span class="guimenuitem">Show different files</span> : shows
+and hides files detected as different</p>
+</li>
+<li>
+<p><span class="guimenuitem">Show left unique files</span> : shows
+and hides files and directories present only in left side</p>
+</li>
+<li>
+<p><span class="guimenuitem">Show right unique files</span> : shows
+and hides files and directories present only in right side</p>
+</li>
+<li>
+<p><span class="guimenuitem">Show binary files</span> : shows and
+hides files detected as binaries</p>
+</li>
+<li>
+<p><span class="guimenuitem">Show skipped files</span> : shows and
+hides files and directories filtered out by file filters</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN660" id="AEN660">8.4. Columns in
+directory compare</a></h2>
+<p>By default these columns are visible:</p>
+<ul>
+<li>
+<p><span class="guilabel">Filename</span></p>
+</li>
+<li>
+<p><span class="guilabel">Directory</span> : Relative directoryname
+for compare path. If subdirectories are not included this is
+empty.</p>
+</li>
+<li>
+<p><span class="guilabel">Comparison result</span> : Verbose
+comparison result (see also <span class="guilabel">Short
+Result</span>)</p>
+</li>
+<li>
+<p><span class="guilabel">Left Date</span> &amp; <span class=
+"guilabel">Right Date</span>: Modification date of item. Note that
+newer date is prefixed with asterisk "<span class=
+"guilabel">*</span>".</p>
+</li>
+<li>
+<p><span class="guilabel">Extension</span> : File's extension,
+handy for sorting</p>
+</li>
+</ul>
+<p>Following columns are available through "<span class=
+"guimenuitem">Customize Columns</span>"-dialog:</p>
+<ul>
+<li>
+<p><span class="guilabel">Binary</span> : Column contains asterisk
+"<span class="guilabel">*</span>" when file is binary. Handy for
+sorting and to use with "<span class="guilabel">Short
+Result</span>"-column.</p>
+</li>
+<li>
+<p><span class="guilabel">Left Attributes</span> &amp; <span class=
+"guilabel">Right Attributes</span> : Shows fileattributes.</p>
+</li>
+<li>
+<p><span class="guilabel">Left Creation Time</span> &amp;
+<span class="guilabel">Right Creation Time</span> : Item creation
+time.</p>
+</li>
+<li>
+<p><span class="guilabel">Left Encoding</span> &amp; <span class=
+"guilabel">Right Encoding</span> : File encoding.</p>
+</li>
+<li>
+<p><span class="guilabel">Left File Version</span> &amp;
+<span class="guilabel">Right File Version</span> : Version number
+from file if present. Note that this is read for only some binary
+files.</p>
+</li>
+<li>
+<p><span class="guilabel">Left Size</span> &amp; <span class=
+"guilabel">Right Size</span> : File size in bytes.</p>
+</li>
+<li>
+<p><span class="guilabel">Newer File</span> : Shows which side is
+newer.</p>
+</li>
+<li>
+<p><span class="guilabel">#differences</span> : Amount of total
+differences found from files.</p>
+</li>
+<li>
+<p><span class="guilabel">#sig. differences</span> : Amount of
+significant differences, total differences - ignored
+differences.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN719" id="AEN719">8.5. Browsing
+folders</a></h2>
+<p>Browsing folders is only possible when subfolders are not
+included to compare. Then parent folders ("<span class=
+"guilabel">..</span>"-item) and subfolders existing in both sides
+can be compared by opening them.</p>
+<p>Parent folder can be opened if it is not same directory. These
+two icons indicate if parent folder can be opened:</p>
+<table border="0">
+<tbody>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/folderup.gif"></span> Parent folder can be
+opened.</td>
+</tr>
+<tr>
+<td><span class="inlinemediaobject"><img src=
+"screenshots/folderup_disable.gif"></span> Parent folder cannot be
+opened. It propably is same directory for both sides.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN733" id="AEN733">8.6. Navigation in
+directory compare</a></h2>
+<p>In addition moving selection using mouse or keyboard, also
+<span class="guimenu">Merge</span>-menu navigation commands,
+toolbar buttons and shortcut keys can be used. For example
+"<span class="guimenuitem">Next diff</span>" finds next different
+file and selects it.</p>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p>Unique files and directories are considered as different
+ones.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Multiple files/directories can be selected. However not all
+operations are possible with multi-selection.</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN741" id="AEN741">8.7. File operations
+in directory compare</a></h2>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN743" id="AEN743">8.7.1. Copying,
+moving and deleting</a></h3>
+<p>Directory compare allows user to copy and delete files and
+directories. File operations are available through context menu
+(right-click with mouse). Also files can be opened to associated
+program or into external editor.</p>
+<p>In file operation menu, there are one or two numbers shown,
+depending on files/folders selected. If there is one number shown,
+for example "<span class="guimenuitem">Copy/Left to... (5)</span>"
+that means there is 5 items selected, and all items can be copied.
+But if there is two numbers shown, for example "<span class=
+"guimenuitem">Copy/Left to... (3 of 5)</span>", that means there
+are 5 items selected but only 3 items can be copied.</p>
+<p>Most common operation is copying files from side to side. File
+can be copied from side to side using <span class=
+"guimenu">Merge</span>-menu items, toolbar buttons and context
+menu. If multiple files are selected, or file to overwrite is
+read-only, confirmation dialog is shown.</p>
+<p>Sometimes it is useful to copy certain files and/or directories
+to another directory instead of another compared directory. This
+can be done selecting "<span class="guimenuitem">Copy/Left
+to...</span>" or "<span class="guimenuitem">Copy/Right
+to...</span>" items.</p>
+<p>Another file/directory operation is deleting. Items in another
+or both sides can be deleted. There is "<span class="guilabel">Send
+deleted files into Recycle Bin</span>" option in system options.
+Its higly recommended to keep that option enabled so deletion can
+be undone if accidents happen. Note however recycle bin does not
+help if its disabled from Windows settings.</p>
+<p>Moving is just shortcut for copy + delete.</p>
+<div class="warning">
+<table class="warning" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/warning.gif" hspace="5" alt="Warning"></td>
+<td align="left" valign="top">
+<p>File/directory deletion cannot be undone if recycle bin is not
+used!</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN760" id="AEN760">8.7.2. Opening
+files</a></h3>
+<p>There are three items in <span class=
+"guimenu">Open</span>-menus:</p>
+<ul>
+<li>
+<p><span class="guimenuitem">With Registered Application</span> :
+Opens file with application registered handling filetype for
+Windows, if there is one.</p>
+</li>
+<li>
+<p><span class="guimenuitem">With External Editor</span> : Open
+with external editor. Default editor can be selected from options,
+Notepad is used by default.</p>
+</li>
+<li>
+<p><span class="guimenuitem">With ...</span> : Opens "<span class=
+"guilabel">Open With...</span>" dialog asking from user with which
+application files should be opened.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN775" id="AEN775">8.7.3.
+Archiving</a></h3>
+<p><span class="guimenu">Zip</span>-menu in directory compare
+context menu allows adding selected items to archive file.</p>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p>Archive support requires that compatible version of <a href=
+"http://www.7-zip.org/" target="_top">7-zip</a> is installed to
+system.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Zip-submenumenu has four items:</p>
+<ul>
+<li>
+<p><span class="guimenuitem">Left...</span> : Adds left-side files
+and folders (recursively) to the archive file</p>
+</li>
+<li>
+<p><span class="guimenuitem">Right...</span> : Adds right-side
+files and folders (recursively) to the archive file</p>
+</li>
+<li>
+<p><span class="guimenuitem">Both...</span> : Adds files and
+folders (recursively) from both sides to the archive file. Because
+filenames are same, files must be put to subfolders inside archive.
+Left-side files are put to subfolder <tt class=
+"filename">Original/</tt> and right-side files are put to subfolder
+<tt class="filename">Altered/</tt>.</p>
+</li>
+<li>
+<p><span class="guimenuitem">Differences...</span> : This is like
+above <span class="guimenuitem">Both</span>, but this item adds
+only different files (including unique files) from both sides.</p>
+</li>
+</ul>
+<p>After selecting one of <span class="guimenu">Zip</span>-menu
+items dialog pops up asking filename and archive type from user.
+WinMerge cannot add files to existing archive files but it always
+creates new archive file.</p>
+<div class="tip">
+<table class="tip" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/tip.gif" hspace="5" alt="Tip"></td>
+<td align="left" valign="top">
+<p>WinMerge looks for subfolders <tt class=
+"filename">Original/</tt> and <tt class="filename">Altered/</tt> in
+archive files. If archive file contains these subfolders and same
+filename is given to both sides WinMerge compares contents of those
+two folders.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>If directory compare shows contents of archive files WinMerge
+updates changes done to files in file compare into original archive
+file. But WinMerge does not update archive contents for files
+added/deleted/copied. User can create a new archive file using
+above menuitems instead.</p>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN806" id="AEN806">8.8. Copying path-
+or filenames</a></h2>
+<p>In context menu there are items for copyging selected items'
+paths or filenames to clipboard. This feature makes it easy so get
+list of changed files, for changelogs etc.</p>
+<ul>
+<li>
+<p><span class="guimenuitem">Copy Pathnames</span> has three
+subchoices like other file handling functions. It copies full
+pathnames of selected items to clipboard, one per line.</p>
+</li>
+<li>
+<p><span class="guimenuitem">Copy Filenames</span> copies only
+filenames without paths.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN816" id="AEN816">8.9. Customising
+directory compare</a></h2>
+<p>There are many ways to customize directory compare:</p>
+<ul>
+<li>
+<p>Sorting by column : Sorted by column can be selected by clicking
+column name with mouse. Little arrow appears next to column name
+indicating that results are sorted by this column and sort
+order.</p>
+</li>
+<li>
+<p>Selecting visible columns : "<span class="guilabel">Display
+Columns</span>" dialog can be opened from <span class=
+"guimenu">Tools</span>-menu or by right-clicking column header with
+mouse.</p>
+</li>
+<li>
+<p>Changing order of columns : Order can be changed in
+"<span class="guilabel">Display Columns</span>" dialog or by drag
+&amp; dropping column names with mouse.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN829" id="AEN829">8.10. Protecting
+directories / read-only directories</a></h2>
+<p>If user wants to protect one or both sides from changes, user
+can set them to read-only from <span class=
+"guimenu">File</span>-menu.</p>
+<div class="important">
+<table class="important" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/important.gif" hspace="5" alt="Important"></td>
+<td align="left" valign="top">
+<p>Setting read-only protects files and directories in current
+compare view only.</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Protected status is inherited to opened files from directory
+compare. If user compares two directories, sets another to
+protected and opens two files for comparing, file opened from
+protected side has protection set too.</p>
+<p>Protection status is shown in statusbar, there are panes for
+left and right side.</p>
+</div>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top"><a href="openpaths.html"
+accesskey="P">Prev</a></td>
+<td width="34%" align="center" valign="top"><a href="index.html"
+accesskey="H">Home</a></td>
+<td width="33%" align="right" valign="top"><a href=
+"comparefiles.html" accesskey="N">Next</a></td>
+</tr>
+<tr>
+<td width="33%" align="left" valign="top">Opening files and
+directories</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">Comparing files</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

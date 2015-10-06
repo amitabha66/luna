@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org">
+<title>Text Encoding (codepages)</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.7">
+<link rel="HOME" title="WinMerge 2.2 Manual" href="index.html">
+<link rel="PREVIOUS" title="Options &amp; configuration" href=
+"configuration.html">
+<link rel="NEXT" title="Locale support" href="locales.html">
+</head>
+<body class="sect1" bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+vlink="#800080" alink="#FF0000">
+<div class="NAVHEADER">
+<table summary="Header navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="3" align="center">WinMerge 2.2 Manual</th>
+</tr>
+<tr>
+<td width="10%" align="left" valign="bottom"><a href=
+"configuration.html" accesskey="P">Prev</a></td>
+<td width="80%" align="center" valign="bottom"></td>
+<td width="10%" align="right" valign="bottom"><a href=
+"locales.html" accesskey="N">Next</a></td>
+</tr>
+</table>
+<hr align="left" width="100%"></div>
+<div class="sect1">
+<h1 class="sect1"><a name="TextEncoding" id="TextEncoding">11. Text
+Encoding (codepages)</a></h1>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1252" id="AEN1252">11.1. Common
+scenarios</a></h2>
+<ol type="1">
+<li>
+<p>Comparing English files coded in ASCII</p>
+<p>You may easily use <tt class="filename">WinMerge.exe</tt>. You
+may also use <tt class="filename">WinMergeU.exe</tt> (if you are on
+NT/2000/XP/2003), but it will be slower due to encoding
+conversion.</p>
+</li>
+<li>
+<p>Comparing western European files coded in the common windows
+codepage</p>
+<p>(See FAQ: How do I tell what encoding my file uses) You may
+easily use <tt class="filename">WinMerge.exe</tt>. You may also use
+<tt class="filename">WinMergeU.exe</tt> (if you are on
+NT/2000/XP/2003), but it will be slower due to encoding
+conversion.</p>
+</li>
+<li>
+<p>Comparing Unicode files</p>
+<p>You should use <tt class="filename">WinMergeU.exe</tt> (if you
+are on NT/2000/XP/2003) as it will be at least as fast, and may be
+faster than <tt class="filename">WinMerge.exe</tt>, in this
+scenario. Also, <tt class="filename">WinMergeU.exe</tt> correctly
+handles UTF-8 files, unlike <tt class="filename">WinMerge.exe</tt>.
+If you are on Win95/98/ME, or if your files are all in English or a
+western European language, you may get by with <tt class=
+"filename">WinMerge.exe</tt>.</p>
+</li>
+<li>
+<p>Comparing multilingual files</p>
+<p>You should use <tt class="filename">WinMergeU.exe</tt> (if you
+are on NT/2000/XP/2003) in order to be able to see the characters
+from different languages simultaneously. If you are on Win95/98/ME,
+then you may attempt to view the files in <tt class=
+"filename">WinMerge.exe</tt>, but it is recommended that you do not
+attempt to merge them.</p>
+</li>
+<li>
+<p>Comparing East Asian files</p>
+<p>You should use <tt class="filename">WinMergeU.exe</tt> (if you
+are on NT/2000/XP/2003) in order to correctly display double-wide
+characters. See the Font section for font recommendations. If you
+are on Win95/98/ME, then you may attempt to view the files in
+<tt class="filename">WinMerge.exe</tt>, but it is recommended that
+you do not attempt to merge them.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN1283" id="AEN1283">11.2.
+Explanation</a></h2>
+<p>Characters (such as "a" or "1" or "&amp;") are represented by
+computers as numbers, and there is more than one way to do this. A
+text encoding method is a way to encode the characters into the
+numbers (bytes) of which a file is comprised. There are four main
+text encoding families:</p>
+<ul>
+<li>
+<p>ASCII</p>
+<p>Each character is one byte in the file. This is an old encoding
+which only supports English letters, numbers, and puncuation.</p>
+</li>
+<li>
+<p>Windows codepages</p>
+<p>Each character is one byte in the file. These are used by
+default by versions of the Windows operating system. Examples
+include:</p>
+<ul>
+<li>
+<p>1252 (windows-1252) Western European (supports many western
+European languages including English, French, Spanish, and
+German)</p>
+</li>
+<li>
+<p>1251 (windows-1251) Cyrillic (supports Cyrillic languages
+including Russian and Bulgarian)</p>
+</li>
+<li>
+<p>1250 (windows-1250) Central European (supports central European
+Latin-scrypt languages including Polish)</p>
+</li>
+<li>
+<p>1253 (windows-1253) Greek (supports Greek)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>ISO codepages</p>
+<p>Each character is one byte in the file. These have names such as
+"ISO-8859-1". Some windows codepages approximate some of these.
+Examples include:</p>
+<ul>
+<li>
+<p>ISO-8851-1 ("Latin-1") This is approximated by windows-1252</p>
+</li>
+</ul>
+</li>
+<li>
+<p>UCS-2LE (Microsoft's style of Unicode)</p>
+<p>Each character is two bytes in the file. This supports Unicode
+2.0, which is most of the characters in the Unicode character
+set.</p>
+</li>
+<li>
+<p>UTF-8</p>
+<p>Each character may be one, two, three, four, five, or six bytes
+in the file. This supports the full range of Unicode 3.x.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top"><a href=
+"configuration.html" accesskey="P">Prev</a></td>
+<td width="34%" align="center" valign="top"><a href="index.html"
+accesskey="H">Home</a></td>
+<td width="33%" align="right" valign="top"><a href="locales.html"
+accesskey="N">Next</a></td>
+</tr>
+<tr>
+<td width="33%" align="left" valign="top">Options &amp;
+configuration</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">Locale support</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org">
+<title>Opening files and directories</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.7">
+<link rel="HOME" title="WinMerge 2.2 Manual" href="index.html">
+<link rel="PREVIOUS" title=
+"Differences in files and how WinMerge handles them" href=
+"introdiff.html">
+<link rel="NEXT" title="Comparing directories" href=
+"comparedirs.html">
+</head>
+<body class="sect1" bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+vlink="#800080" alink="#FF0000">
+<div class="NAVHEADER">
+<table summary="Header navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<th colspan="3" align="center">WinMerge 2.2 Manual</th>
+</tr>
+<tr>
+<td width="10%" align="left" valign="bottom"><a href=
+"introdiff.html" accesskey="P">Prev</a></td>
+<td width="80%" align="center" valign="bottom"></td>
+<td width="10%" align="right" valign="bottom"><a href=
+"comparedirs.html" accesskey="N">Next</a></td>
+</tr>
+</table>
+<hr align="left" width="100%"></div>
+<div class="sect1">
+<h1 class="sect1"><a name="OpenPaths" id="OpenPaths">7. Opening
+files and directories</a></h1>
+<p>WinMerge allows selecting/opening paths in several ways. Using
+Open-dialog is just one of them.</p>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN443" id="AEN443">7.1.
+Open-dialog</a></h2>
+<p>Basic use of Open-dialog is described in <a href=
+"quickstart.html">Quick start</a>. Here is some more detailed
+information and tips about how to use Open-dialog more
+efficiently.</p>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN447" id="AEN447">7.1.1. Environment
+variables</a></h3>
+<p>Environment variables can be used as (part of) paths. An
+environment variable is expanded when its name is put between two
+<code class="constant">%</code>:s.</p>
+<div class="example"><a name="AEN451" id="AEN451"></a>
+<p><b>Example 2. Using environment variables</b></p>
+<p>If an environment variable named <var class=
+"envar">WORKDIR</var> contains the path <tt class=
+"filename">c:\workfiles</tt> then <var class=
+"envar">%WORKDIR%\project1</var> is expanded to path <tt class=
+"filename">c:\workfiles\project1</tt> .</p>
+</div>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN458" id="AEN458">7.1.2. Opening
+archive files</a></h3>
+<p>Archive file support requires 7-Zip plugin to be installed. See
+<a href="installing.html">Installing directions</a>.</p>
+<p>Opening two archive files is similar to normal files: select two
+archive files to Open-dialog's fields. If WinMerge recognizes the
+archive format, it opens the contents of the archive files to
+directory compare.</p>
+<p><a href="comparedirs.html">Directory compare</a> chapter
+describes how to work with archive files. If archive file contains
+subfolders <tt class="filename">Original/</tt> and <tt class=
+"filename">Altered/</tt> it must be opened by selecting same
+filename to both sides in Open-dialog or commandline. Then WinMerge
+can compare contents of those two subfolders.</p>
+<div class="tip">
+<table class="tip" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/tip.gif" hspace="5" alt="Tip"></td>
+<td align="left" valign="top">
+<p>When dragging an archive file to WinMerge window, press
+<b class="keycap">Shift</b> when dropping the file and WinMerge
+will automatically copy the same filename to both sides and open
+the archive file.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN470" id="AEN470">7.1.3. Filter
+selection</a></h3>
+<p>Third edit field in Open dialog is for filter. This field can
+contain list of file extensions to include or file filter name.</p>
+<p>Extensions must always be in format <tt class=
+"filename">*.extension</tt>. So file extension list cannot be used
+for more advanced selecting, file filters are there for it.
+Different extensions can be separated by spaces, commas, colons or
+semicolons.</p>
+<div class="example"><a name="AEN475" id="AEN475"></a>
+<p><b>Example 3. Extension list</b></p>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+*.h;*.cpp *.txt,*.ini
+</pre></td>
+</tr>
+</table>
+</div>
+<div class="tip">
+<table class="tip" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/tip.gif" hspace="5" alt="Tip"></td>
+<td align="left" valign="top">
+<p><tt class="filename">*.</tt> (star, dot and no extension)
+selects files without any extension, for example "<tt class=
+"filename">README</tt>".</p>
+</td>
+</tr>
+</table>
+</div>
+<p>Field can also contain file filter name. Easiest way to select
+file filter is using Filters-dialog which can be opended with
+"<span class="guibutton">Select...</span>" button next to field.
+That dialog allows also opening filters for editing.</p>
+<div class="note">
+<table class="note" width="100%" border="0">
+<tr>
+<td width="25" align="center" valign="top"><img src=
+"./images/note.gif" hspace="5" alt="Note"></td>
+<td align="left" valign="top">
+<p>If filter cannot be found by name or extension list is not valid
+WinMerge selects all files (i.e. uses <tt class="filename">*.*</tt>
+as extension list).</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN487" id="AEN487">7.2. Shell
+Extension</a></h2>
+<p>Shell extension is convenient way to select paths using Windows
+Explorer. Shell Extension must be first enabled from Options/System
+before use. When Shell Extension is enabled item "<span class=
+"guimenuitem">WinMerge</span>" is added to context menu (click
+right mouse button over file or folder in Explorer).</p>
+<p>WinMerge accepts one or two paths. When one path is selected
+through Shell Extension WinMerge places it as "<span class=
+"guilabel">Left</span>" path and open Open-dialog for user to
+select "<span class="guilabel">Right</span>" path. Also if two
+paths are selected but another path couldn't be opened for reason
+or another WinMerge shows Open-dialog for selecting valid
+paths.</p>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN494" id="AEN494">7.2.1. Advanced
+Shell Extension</a></h3>
+<p>Selecting "<span class="guilabel">Enable advanced menu</span>"
+for shell extension from options allows more choices for path
+selection. Now WinMerge adds two menuitems to Explorer context
+menu: "<span class="guimenuitem">Compare</span>" and "<span class=
+"guimenuitem">Compare...</span>". Latter is always shown and
+behaves like "<span class="guimenuitem">WinMerge</span>" item in
+simple menu. New "<span class="guimenuitem">Compare</span>" item
+allows selecting one item to "memory" from one location, going to
+another directory and then selecting second item to compare against
+previously memorized item.</p>
+<p>In practice using memorized items is simple:</p>
+<ol type="1">
+<li>
+<p>Select first item you want to compare, open context menu and
+select first "<span class="guimenuitem">Compare</span>" item. Path
+is now in memory.</p>
+</li>
+<li>
+<p>Browse to location of second item you want to compare and select
+it. Open context menu and move menuselection over first
+"<span class="guimenuitem">Compare item</span>". Now Explorer's
+statusbar shows memorized path to which you are comparing newly
+selected path.</p>
+</li>
+</ol>
+<p>After memorized path is used for compare it is forgotten. So
+user cannot select one item to memorize and then compare it against
+several paths.</p>
+</div>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN511" id="AEN511">7.3. Drag and
+Drop</a></h2>
+<p>One or two paths can be drag and dropped to WinMerge window from
+Windows Explorer, Desktop or whatever source Windows allows
+dragging paths from. WinMerge does not include subfolders in
+compare. Subfolders can be included by pressing <b class=
+"keycap">Control</b>-key while dropping paths.</p>
+<p>Another useful key when dropping paths is <b class=
+"keycap">Shift</b>. When there is only one path dropped and
+<b class="keycap">Shift</b> is pressed that same path is opened to
+both sides.</p>
+</div>
+<div class="sect2">
+<h2 class="sect2"><a name="AEN518" id="AEN518">7.4. Project
+file</a></h2>
+<p>WinMerge can read (but not write) paths from project files.
+Project file can be given to commandline like normal file or
+selected in Open-dialog. WinMerge then detects file is project file
+and reads paths it contains and if two paths are given opens them.
+If only one path is given or one of paths is invalid Open-dialog is
+show for user to select second path or valid paths.</p>
+<p>Project files are simple XML files with <tt class=
+"filename">.WinMerge</tt> extension.</p>
+<div class="sect3">
+<h3 class="sect3"><a name="AEN523" id="AEN523">7.4.1.
+Format</a></h3>
+<table border="0" bgcolor="#BBDDFF" width="100%" cellpadding="0"
+cellspacing="0">
+<tr>
+<td>
+<pre class="screen">
+&lt;?xml version="1.0"?&gt;
+&lt;project&gt;
+        &lt;paths&gt;
+                &lt;left&gt;<var class=
+"replaceable">c:\work\project1</var>&lt;/left&gt;
+                &lt;right&gt;<var class=
+"replaceable">c:\work\project2</var>&lt;/right&gt;
+                &lt;filter&gt;<var class=
+"replaceable">Visual C++ loose</var>&lt;/filter&gt;
+                &lt;subfolders&gt;<var class=
+"replaceable">0&lt;</var>/subfolders&gt;
+        &lt;/paths&gt;
+&lt;/project&gt;
+</pre></td>
+</tr>
+</table>
+<p>Project file has four user-editable fields:</p>
+<ul>
+<li>
+<p><var class="literal">&lt;left&gt;<var class=
+"replaceable">...</var>&lt;/left&gt;</var> : Left side path to
+open</p>
+</li>
+<li>
+<p><var class="literal">&lt;right&gt;<var class=
+"replaceable">...</var>&lt;/right&gt;</var> : Right side path to
+open</p>
+</li>
+<li>
+<p><var class="literal">&lt;filter&gt;<var class=
+"replaceable">...</var>&lt;/filter&gt;</var> : file filter name or
+list of extensions</p>
+</li>
+<li>
+<p><var class="literal">&lt;subfolders&gt;<var class=
+"replaceable">...</var>&lt;/subfolders&gt;</var> : 0 if subfolders
+are not included and 1 if they are included</p>
+</li>
+</ul>
+<p>None of fields are required and they can be empty (<var class=
+"literal">&lt;left&gt;&lt;/left&gt;</var>).</p>
+</div>
+</div>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top"><a href="introdiff.html"
+accesskey="P">Prev</a></td>
+<td width="34%" align="center" valign="top"><a href="index.html"
+accesskey="H">Home</a></td>
+<td width="33%" align="right" valign="top"><a href=
+"comparedirs.html" accesskey="N">Next</a></td>
+</tr>
+<tr>
+<td width="33%" align="left" valign="top">Differences in files and
+how WinMerge handles them</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">Comparing
+directories</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

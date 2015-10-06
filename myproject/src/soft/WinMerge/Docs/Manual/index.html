@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org">
+<title>WinMerge 2.2 Manual</title>
+<meta name="GENERATOR" content=
+"Modular DocBook HTML Stylesheet Version 1.7">
+<link rel="NEXT" title="About this document" href="aboutdoc.html">
+</head>
+<body class="article" bgcolor="#FFFFFF" text="#000000" link=
+"#0000FF" vlink="#800080" alink="#FF0000">
+<div class="ARTICLE">
+<div class="TITLEPAGE">
+<h1 class="title"><a name="AEN2" id="AEN2">WinMerge 2.2
+Manual</a></h1>
+<div class="authorgroup"><a name="AEN12" id="AEN12"></a>
+<h3 class="author"><a name="AEN13" id="AEN13">Kimmo Varis</a></h3>
+<h3 class="author"><a name="AEN16" id="AEN16">Dean Grimm</a></h3>
+<h3 class="author"><a name="AEN19" id="AEN19">Laurent
+Ganier</a></h3>
+<h3 class="author"><a name="AEN22" id="AEN22">Tim Gerundt</a></h3>
+<h3 class="author"><a name="AEN25" id="AEN25">Perry Rapp</a></h3>
+<h3 class="author"><a name="AEN28" id="AEN28"></a></h3>
+</div>
+<span class="releaseinfo"><span class="emphasis"><i class=
+"emphasis">Revision 1.0.2</i></span><br></span>
+<p class="copyright">Copyright &copy; 2004-2005 Thingamahoochie
+Software.</p>
+<hr></div>
+<div class="TOC">
+<dl>
+<dt><b>Table of Contents</b></dt>
+<dt>1. <a href="aboutdoc.html">About this document</a></dt>
+<dt>2. <a href="quickstart.html">Quick start</a></dt>
+<dd>
+<dl>
+<dt>2.1. <a href="quickstart.html#AEN41">Opening files and
+directories</a></dt>
+<dt>2.2. <a href="quickstart.html#AEN84">Comparing
+directories</a></dt>
+<dt>2.3. <a href="quickstart.html#AEN93">Comparing files</a></dt>
+</dl>
+</dd>
+<dt>3. <a href="introduction.html">Introduction to
+WinMerge</a></dt>
+<dd>
+<dl>
+<dt>3.1. <a href="introduction.html#AEN117">WinMerge
+versions</a></dt>
+<dt>3.2. <a href="introduction.html#AEN134">Getting support and
+reporting bugs</a></dt>
+<dt>3.3. <a href="introduction.html#AEN143">WinMerge source codes
+and development</a></dt>
+</dl>
+</dd>
+<dt>4. <a href="whatsnew22.html">What's new in 2.2</a></dt>
+<dd>
+<dl>
+<dt>4.1. <a href="whatsnew22.html#AEN161">Unicode support</a></dt>
+<dt>4.2. <a href="whatsnew22.html#AEN168">Archive support</a></dt>
+<dt>4.3. <a href="whatsnew22.html#AEN173">Shell
+integration</a></dt>
+<dt>4.4. <a href="whatsnew22.html#AEN177">Selecting filter from
+commandline</a></dt>
+<dt>4.5. <a href="whatsnew22.html#AEN181">Project files</a></dt>
+<dt>4.6. <a href="whatsnew22.html#AEN184">Generating
+patches</a></dt>
+<dt>4.7. <a href="whatsnew22.html#AEN188">Plugins</a></dt>
+<dt>4.8. <a href="whatsnew22.html#AEN191">Improved directory
+compare</a></dt>
+<dt>4.9. <a href="whatsnew22.html#AEN210">Improved file
+compare</a></dt>
+</dl>
+</dd>
+<dt>5. <a href="installing.html">Getting and installing
+WinMerge</a></dt>
+<dd>
+<dl>
+<dt>5.1. <a href="installing.html#AEN243">Getting files</a></dt>
+<dt>5.2. <a href="installing.html#AEN251">Using installer
+(recommended)</a></dt>
+<dt>5.3. <a href="installing.html#AEN319">Installing from
+archive</a></dt>
+<dt>5.4. <a href="installing.html#AEN340">Shell
+integration</a></dt>
+<dt>5.5. <a href="installing.html#AEN351">7-Zip and archive
+support</a></dt>
+</dl>
+</dd>
+<dt>6. <a href="introdiff.html">Differences in files and how
+WinMerge handles them</a></dt>
+<dd>
+<dl>
+<dt>6.1. <a href="introdiff.html#AEN405">What is a
+difference?</a></dt>
+<dt>6.2. <a href="introdiff.html#AEN419">Missing lines</a></dt>
+<dt>6.3. <a href="introdiff.html#AEN427">Merging
+difference</a></dt>
+</dl>
+</dd>
+<dt>7. <a href="openpaths.html">Opening files and
+directories</a></dt>
+<dd>
+<dl>
+<dt>7.1. <a href="openpaths.html#AEN443">Open-dialog</a></dt>
+<dt>7.2. <a href="openpaths.html#AEN487">Shell Extension</a></dt>
+<dt>7.3. <a href="openpaths.html#AEN511">Drag and Drop</a></dt>
+<dt>7.4. <a href="openpaths.html#AEN518">Project file</a></dt>
+</dl>
+</dd>
+<dt>8. <a href="comparedirs.html">Comparing directories</a></dt>
+<dd>
+<dl>
+<dt>8.1. <a href="comparedirs.html#AEN569">Directory compare
+statepane</a></dt>
+<dt>8.2. <a href="comparedirs.html#AEN589">Compare results</a></dt>
+<dt>8.3. <a href="comparedirs.html#AEN637">Selecting files to
+show</a></dt>
+<dt>8.4. <a href="comparedirs.html#AEN660">Columns in directory
+compare</a></dt>
+<dt>8.5. <a href="comparedirs.html#AEN719">Browsing
+folders</a></dt>
+<dt>8.6. <a href="comparedirs.html#AEN733">Navigation in directory
+compare</a></dt>
+<dt>8.7. <a href="comparedirs.html#AEN741">File operations in
+directory compare</a></dt>
+<dt>8.8. <a href="comparedirs.html#AEN806">Copying path- or
+filenames</a></dt>
+<dt>8.9. <a href="comparedirs.html#AEN816">Customising directory
+compare</a></dt>
+<dt>8.10. <a href="comparedirs.html#AEN829">Protecting directories
+/ read-only directories</a></dt>
+</dl>
+</dd>
+<dt>9. <a href="comparefiles.html">Comparing files</a></dt>
+<dd>
+<dl>
+<dt>9.1. <a href="comparefiles.html#AEN846">Showing the
+differences</a></dt>
+<dt>9.2. <a href="comparefiles.html#AEN849">File headerbar</a></dt>
+<dt>9.3. <a href="comparefiles.html#AEN864">Statusbar</a></dt>
+<dt>9.4. <a href="comparefiles.html#AEN911">Difference
+navigation</a></dt>
+<dt>9.5. <a href="comparefiles.html#AEN979">Merging
+differences</a></dt>
+<dt>9.6. <a href="comparefiles.html#AEN999">Refreshing</a></dt>
+<dt>9.7. <a href="comparefiles.html#AEN1004">View
+whitespaces</a></dt>
+<dt>9.8. <a href="comparefiles.html#AEN1013">Editing files</a></dt>
+<dt>9.9. <a href="comparefiles.html#AEN1016">Difference inside
+line</a></dt>
+<dt>9.10. <a href="comparefiles.html#AEN1025">Context menu</a></dt>
+<dt>9.11. <a href="comparefiles.html#AEN1033">Fonts</a></dt>
+</dl>
+</dd>
+<dt>10. <a href="configuration.html">Options &amp;
+configuration</a></dt>
+<dd>
+<dl>
+<dt>10.1. <a href="configuration.html#AEN1061">General
+options</a></dt>
+<dt>10.2. <a href="configuration.html#AEN1102">Compare
+options</a></dt>
+<dt>10.3. <a href="configuration.html#AEN1159">Editor
+options</a></dt>
+<dt>10.4. <a href="configuration.html#AEN1198">System
+options</a></dt>
+<dt>10.5. <a href="configuration.html#AEN1225">Codepage
+options</a></dt>
+</dl>
+</dd>
+<dt>11. <a href="textencoding.html">Text Encoding
+(codepages)</a></dt>
+<dd>
+<dl>
+<dt>11.1. <a href="textencoding.html#AEN1252">Common
+scenarios</a></dt>
+<dt>11.2. <a href="textencoding.html#AEN1283">Explanation</a></dt>
+</dl>
+</dd>
+<dt>12. <a href="locales.html">Locale support</a></dt>
+<dd>
+<dl>
+<dt>12.1. <a href="locales.html#AEN1361">Selecting
+language</a></dt>
+<dt>12.2. <a href="locales.html#AEN1375">Installing
+translation</a></dt>
+<dt>12.3. <a href="locales.html#AEN1408">Reporting error in
+translation</a></dt>
+<dt>12.4. <a href="locales.html#AEN1412">Submitting a new
+translation</a></dt>
+</dl>
+</dd>
+<dt>13. <a href="plugins.html">Plugins</a></dt>
+<dd>
+<dl>
+<dt>13.1. <a href="plugins.html#AEN1434">Three categories of
+plugins</a></dt>
+<dt>13.2. <a href="plugins.html#AEN1451">Select and apply a
+plugin</a></dt>
+<dt>13.3. <a href="plugins.html#AEN1524">Plugin details</a></dt>
+<dt>13.4. <a href="plugins.html#AEN1534">Windows Script
+Host</a></dt>
+</dl>
+</dd>
+<dt>14. <a href="filters.html">Filters</a></dt>
+<dd>
+<dl>
+<dt>14.1. <a href="filters.html#AEN1544">Regular
+expressions</a></dt>
+<dt>14.2. <a href="filters.html#AEN1572">File filters</a></dt>
+<dt>14.3. <a href="filters.html#AEN1646">Line filters</a></dt>
+</dl>
+</dd>
+<dt>15. <a href="versioncontrol.html">Version control
+integration</a></dt>
+<dd>
+<dl>
+<dt>15.1. <a href="versioncontrol.html#AEN1693">Visual
+SourceSafe</a></dt>
+</dl>
+</dd>
+<dt>16. <a href="commandline.html">Commandline</a></dt>
+<dt>17. <a href="faq.html">Frequently asked questions</a></dt>
+<dd>
+<dl>
+<dt>17.1. <a href="faq.html#AEN1830">General questions</a></dt>
+<dt>17.2. <a href="faq.html#AEN1886">Questions about binary
+files</a></dt>
+<dt>17.3. <a href="faq.html#AEN1913">Questions about
+editor</a></dt>
+<dt>17.4. <a href="faq.html#AEN1955">WinMerge as external compare
+or diff-tool</a></dt>
+<dt>17.5. <a href="faq.html#AEN1984">Archive support</a></dt>
+<dt>17.6. <a href="faq.html#AEN1997">Text encoding
+(codepages)</a></dt>
+<dt>17.7. <a href="faq.html#AEN2027">Patch files</a></dt>
+</dl>
+</dd>
+<dt>A. <a href="shortcuts.html">Shortcut keys</a></dt>
+</dl>
+</div>
+</div>
+<div class="NAVFOOTER">
+<hr align="left" width="100%">
+<table summary="Footer navigation table" width="100%" border="0"
+cellpadding="0" cellspacing="0">
+<tr>
+<td width="33%" align="left" valign="top">&nbsp;</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top"><a href="aboutdoc.html"
+accesskey="N">Next</a></td>
+</tr>
+<tr>
+<td width="33%" align="left" valign="top">&nbsp;</td>
+<td width="34%" align="center" valign="top">&nbsp;</td>
+<td width="33%" align="right" valign="top">About this document</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
