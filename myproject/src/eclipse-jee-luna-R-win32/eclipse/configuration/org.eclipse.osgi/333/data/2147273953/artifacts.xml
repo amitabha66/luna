@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='update site: jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1422423945258'/>
+    <property name='eclipse.p2.force.threading' value='true'/>
+    <property name='site.checksum' value='2621753080'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='6'>
+    <artifact classifier='org.eclipse.update.feature' id='net.java.dev.jna' version='4.1.0.v20140626_1915'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/features/net.java.dev.jna_4.1.0.v20140626_1915.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.tmatesoft.svnkit' version='1.8.7.r10376_v20141223_2131'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/features/org.tmatesoft.svnkit_1.8.7.r10376_v20141223_2131.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.tmatesoft.svnkit' version='1.8.7.r10376_v20141223_2131'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/plugins/org.tmatesoft.svnkit_1.8.7.r10376_v20141223_2131.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.java.dev.jna' version='4.1.0.v20140626_1915'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/plugins/net.java.dev.jna_4.1.0.v20140626_1915.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.trilead.ssh2' version='1.0.0.build217_r155_v20130603_1628'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/plugins/com.trilead.ssh2_1.0.0.build217_r155_v20130603_1628.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.tmatesoft.sqljet' version='1.1.10.r1317_v20140121_0107'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/plugins/org.tmatesoft.sqljet_1.1.10.r1317_v20140121_0107.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

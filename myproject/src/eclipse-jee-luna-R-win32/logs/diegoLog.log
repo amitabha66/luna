@@ -1,0 +1,931 @@
+2015-02-27 18:51:26,609 INFO [main] Root WebApplicationContext: initialization started
+2015-02-27 18:51:26,648 DEBUG [main] Found Equinox FileLocator for OSGi bundle URL resolution
+2015-02-27 18:51:26,697 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:26,697 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:26,701 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:26,701 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:26,703 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:26,704 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:26,710 DEBUG [main] Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2015-02-27 18:51:26,711 INFO [main] Refreshing Root WebApplicationContext: startup date [Fri Feb 27 18:51:26 IST 2015]; root of context hierarchy
+2015-02-27 18:51:26,751 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:26,753 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:26,753 DEBUG [main] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2015-02-27 18:51:26,762 INFO [main] Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2015-02-27 18:51:26,764 DEBUG [main] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2015-02-27 18:51:26,774 DEBUG [main] Loading schema mappings from [META-INF/spring.schemas]
+2015-02-27 18:51:26,780 DEBUG [main] Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.4.xsd=org/springframework/data/repository/config/spring-repository-1.4.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.3.xsd, http://www.springframework.org/schema/security/spring-security-3.0.3.xsd=org/springframework/security/config/spring-security-3.0.3.xsd, http://www.springframework.org/schema/security/spring-security-2.0.1.xsd=org/springframework/security/config/spring-security-2.0.1.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/security/spring-security-2.0.xsd=org/springframework/security/config/spring-security-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository.xsd=org/springframework/data/repository/config/spring-repository-1.7.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.7.xsd=org/springframework/data/repository/config/spring-repository-1.7.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/security/spring-security-2.0.4.xsd=org/springframework/security/config/spring-security-2.0.4.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/security/spring-security-3.2.xsd=org/springframework/security/config/spring-security-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.2.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.6.xsd=org/springframework/data/repository/config/spring-repository-1.6.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/security/spring-security-3.1.xsd=org/springframework/security/config/spring-security-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.0.xsd=org/springframework/data/repository/config/spring-repository-1.0.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.1.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.1.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd=org/springframework/data/repository/config/spring-repository-1.5.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/security/spring-security-2.0.2.xsd=org/springframework/security/config/spring-security-2.0.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/security/spring-security.xsd=org/springframework/security/config/spring-security-3.2.xsd, http://www.springframework.org/schema/security/spring-security-3.0.xsd=org/springframework/security/config/spring-security-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.0.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.0.xsd}
+2015-02-27 18:51:26,781 DEBUG [main] Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2015-02-27 18:51:26,797 DEBUG [main] Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2015-02-27 18:51:26,799 DEBUG [main] Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2015-02-27 18:51:26,804 DEBUG [main] Loading bean definitions
+2015-02-27 18:51:26,845 DEBUG [main] Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/data/repository=org.springframework.data.repository.config.RepositoryNameSpaceHandler, http://www.springframework.org/schema/data/jpa=org.springframework.data.jpa.repository.config.JpaRepositoryNameSpaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/security=org.springframework.security.config.SecurityNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2015-02-27 18:51:26,860 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:26,860 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:26,860 DEBUG [main] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2015-02-27 18:51:26,870 DEBUG [main] Looking for matching resources in directory tree [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego]
+2015-02-27 18:51:26,870 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:26,874 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:26,877 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\controller] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:26,877 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\dao] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:26,877 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\logger] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:26,878 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\model] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:26,878 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\service] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:26,880 DEBUG [main] Resolved location pattern [classpath*:com/diego/**/*.class] to resources [file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth\AuthenticationEntryPoint.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth\CustomUserDetails.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth\CustomUserDetailsService.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\controller\LoginController.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\controller\UserWebservice.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\dao\UserDao.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\dao\UserDaoImpl.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\logger\DiegoLog4j2LoggerImpl.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\logger\DiegoLogFactory.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\logger\DiegoLogger.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\model\Permission.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\model\Role.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\model\User.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\service\UserService.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\service\UserServiceImpl.class]]
+2015-02-27 18:51:26,910 DEBUG [main] Identified candidate component class: file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth\CustomUserDetailsService.class]
+2015-02-27 18:51:26,916 DEBUG [main] Identified candidate component class: file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\controller\LoginController.class]
+2015-02-27 18:51:26,918 DEBUG [main] Identified candidate component class: file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\controller\UserWebservice.class]
+2015-02-27 18:51:26,922 DEBUG [main] Identified candidate component class: file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\dao\UserDaoImpl.class]
+2015-02-27 18:51:26,932 DEBUG [main] Identified candidate component class: file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\service\UserServiceImpl.class]
+2015-02-27 18:51:26,953 DEBUG [main] Loaded 9 bean definitions from location pattern [/WEB-INF/dispatcher-servlet.xml]
+2015-02-27 18:51:26,953 INFO [main] Loading XML bean definitions from ServletContext resource [/WEB-INF/security-context.xml]
+2015-02-27 18:51:26,954 DEBUG [main] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2015-02-27 18:51:26,957 DEBUG [main] Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.1.xsd
+2015-02-27 18:51:26,966 DEBUG [main] Found XML schema [http://www.springframework.org/schema/security/spring-security-3.2.xsd] in classpath: org/springframework/security/config/spring-security-3.2.xsd
+2015-02-27 18:51:26,981 DEBUG [main] Loading bean definitions
+2015-02-27 18:51:26,987 INFO [main] You are running with Spring Security Core 3.2.5.RELEASE
+2015-02-27 18:51:26,991 INFO [main] Spring Security 'config' module version is 3.2.5.RELEASE
+2015-02-27 18:51:27,035 INFO [main] Creating access control expression attribute 'permitAll' for /
+2015-02-27 18:51:27,035 INFO [main] Creating access control expression attribute 'permitAll' for /login.jsp
+2015-02-27 18:51:27,035 INFO [main] Creating access control expression attribute 'permitAll' for /loginerr
+2015-02-27 18:51:27,036 INFO [main] Creating access control expression attribute 'hasRole('DIEGO_PERMISSION')' for /**
+2015-02-27 18:51:27,081 INFO [main] No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+2015-02-27 18:51:27,085 INFO [main] Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1100, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2200, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2300]
+2015-02-27 18:51:27,087 INFO [main] Overriding bean definition for bean 'customUserDetailsService': replacing [Generic bean: class [com.diego.auth.CustomUserDetailsService]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth\CustomUserDetailsService.class]] with [Generic bean: class [com.diego.auth.CustomUserDetailsService]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in ServletContext resource [/WEB-INF/security-context.xml]]
+2015-02-27 18:51:27,095 INFO [main] Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+2015-02-27 18:51:27,108 DEBUG [main] Loaded 26 bean definitions from location pattern [/WEB-INF/security-context.xml]
+2015-02-27 18:51:27,108 DEBUG [main] Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@1320a41: defining beans [customUserDetailsService,loginController,userWebservice,userDaoImpl,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.security.filterChains,org.springframework.security.filterChainProxy,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.web.PortResolverImpl#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.userDetailsServiceFactory,org.springframework.security.web.DefaultSecurityFilterChain#0,authenticationEntryPoint,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,authenticationManager,org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0,org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0,org.springframework.security.access.vote.AffirmativeBased#1,org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0,org.springframework.security.methodSecurityMetadataSourceAdvisor,org.springframework.aop.config.internalAutoProxyCreator]; root of factory hierarchy
+2015-02-27 18:51:27,121 DEBUG [main] Registering scope 'request' with implementation [org.springframework.web.context.request.RequestScope@77eb97]
+2015-02-27 18:51:27,122 DEBUG [main] Registering scope 'session' with implementation [org.springframework.web.context.request.SessionScope@1b6235b]
+2015-02-27 18:51:27,122 DEBUG [main] Registering scope 'globalSession' with implementation [org.springframework.web.context.request.SessionScope@cb42cf]
+2015-02-27 18:51:27,123 DEBUG [main] Registering scope 'application' with implementation [org.springframework.web.context.support.ServletContextScope@1bc4ec8]
+2015-02-27 18:51:27,143 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-02-27 18:51:27,143 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-02-27 18:51:27,158 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,161 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-02-27 18:51:27,226 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-02-27 18:51:27,226 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-02-27 18:51:27,227 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,227 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-02-27 18:51:27,227 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-02-27 18:51:27,228 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-02-27 18:51:27,228 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,228 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-02-27 18:51:27,228 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-02-27 18:51:27,228 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-02-27 18:51:27,230 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,230 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-02-27 18:51:27,230 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-02-27 18:51:27,230 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-02-27 18:51:27,230 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,230 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-02-27 18:51:27,230 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-02-27 18:51:27,230 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-02-27 18:51:27,230 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,230 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-02-27 18:51:27,230 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2015-02-27 18:51:27,231 DEBUG [main] Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2015-02-27 18:51:27,242 DEBUG [main] Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2015-02-27 18:51:27,263 DEBUG [main] Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2015-02-27 18:51:27,266 DEBUG [main] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@11a0d35]
+2015-02-27 18:51:27,269 DEBUG [main] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@bafdff]
+2015-02-27 18:51:27,271 DEBUG [main] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@16daa9]
+2015-02-27 18:51:27,275 DEBUG [main] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1320a41: defining beans [customUserDetailsService,loginController,userWebservice,userDaoImpl,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.security.filterChains,org.springframework.security.filterChainProxy,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.web.PortResolverImpl#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.userDetailsServiceFactory,org.springframework.security.web.DefaultSecurityFilterChain#0,authenticationEntryPoint,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,authenticationManager,org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0,org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0,org.springframework.security.access.vote.AffirmativeBased#1,org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0,org.springframework.security.methodSecurityMetadataSourceAdvisor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2015-02-27 18:51:27,275 DEBUG [main] Creating shared instance of singleton bean 'customUserDetailsService'
+2015-02-27 18:51:27,275 DEBUG [main] Creating instance of bean 'customUserDetailsService'
+2015-02-27 18:51:27,282 DEBUG [main] Registered injected element on class [com.diego.auth.CustomUserDetailsService]: AutowiredFieldElement for private com.diego.service.UserService com.diego.auth.CustomUserDetailsService.userService
+2015-02-27 18:51:27,282 DEBUG [main] Eagerly caching bean 'customUserDetailsService' to allow for resolving potential circular references
+2015-02-27 18:51:27,282 DEBUG [main] Processing injected element of bean 'customUserDetailsService': AutowiredFieldElement for private com.diego.service.UserService com.diego.auth.CustomUserDetailsService.userService
+2015-02-27 18:51:27,286 DEBUG [main] Creating shared instance of singleton bean 'userServiceImpl'
+2015-02-27 18:51:27,286 DEBUG [main] Creating instance of bean 'userServiceImpl'
+2015-02-27 18:51:27,288 DEBUG [main] Registered injected element on class [com.diego.service.UserServiceImpl]: AutowiredFieldElement for com.diego.dao.UserDao com.diego.service.UserServiceImpl.userDao
+2015-02-27 18:51:27,288 DEBUG [main] Eagerly caching bean 'userServiceImpl' to allow for resolving potential circular references
+2015-02-27 18:51:27,289 DEBUG [main] Processing injected element of bean 'userServiceImpl': AutowiredFieldElement for com.diego.dao.UserDao com.diego.service.UserServiceImpl.userDao
+2015-02-27 18:51:27,289 DEBUG [main] Creating shared instance of singleton bean 'userDaoImpl'
+2015-02-27 18:51:27,289 DEBUG [main] Creating instance of bean 'userDaoImpl'
+2015-02-27 18:51:27,289 DEBUG [main] Eagerly caching bean 'userDaoImpl' to allow for resolving potential circular references
+2015-02-27 18:51:27,290 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,290 DEBUG [main] Creating instance of bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,303 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0'
+2015-02-27 18:51:27,303 DEBUG [main] Creating instance of bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0'
+2015-02-27 18:51:27,303 DEBUG [main] Creating instance of bean '(inner bean)#11bd9c9'
+2015-02-27 18:51:27,304 DEBUG [main] Creating instance of bean '(inner bean)#f268de'
+2015-02-27 18:51:27,305 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0'
+2015-02-27 18:51:27,305 DEBUG [main] Creating instance of bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0'
+2015-02-27 18:51:27,317 DEBUG [main] Eagerly caching bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,319 DEBUG [main] Finished creating instance of bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0'
+2015-02-27 18:51:27,323 DEBUG [main] Finished creating instance of bean '(inner bean)#f268de'
+2015-02-27 18:51:27,326 DEBUG [main] Finished creating instance of bean '(inner bean)#11bd9c9'
+2015-02-27 18:51:27,329 DEBUG [main] Eagerly caching bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,330 DEBUG [main] Finished creating instance of bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0'
+2015-02-27 18:51:27,334 DEBUG [main] Eagerly caching bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor' to allow for resolving potential circular references
+2015-02-27 18:51:27,335 DEBUG [main] Finished creating instance of bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,342 DEBUG [main] Finished creating instance of bean 'userDaoImpl'
+2015-02-27 18:51:27,342 DEBUG [main] Autowiring by type from bean name 'userServiceImpl' to bean named 'userDaoImpl'
+2015-02-27 18:51:27,342 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,343 DEBUG [main] Finished creating instance of bean 'userServiceImpl'
+2015-02-27 18:51:27,343 DEBUG [main] Autowiring by type from bean name 'customUserDetailsService' to bean named 'userServiceImpl'
+2015-02-27 18:51:27,343 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,343 DEBUG [main] Finished creating instance of bean 'customUserDetailsService'
+2015-02-27 18:51:27,343 DEBUG [main] Creating shared instance of singleton bean 'loginController'
+2015-02-27 18:51:27,343 DEBUG [main] Creating instance of bean 'loginController'
+2015-02-27 18:51:27,348 DEBUG [main] Eagerly caching bean 'loginController' to allow for resolving potential circular references
+2015-02-27 18:51:27,348 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,349 DEBUG [main] Finished creating instance of bean 'loginController'
+2015-02-27 18:51:27,349 DEBUG [main] Creating shared instance of singleton bean 'userWebservice'
+2015-02-27 18:51:27,349 DEBUG [main] Creating instance of bean 'userWebservice'
+2015-02-27 18:51:27,350 DEBUG [main] Registered injected element on class [com.diego.controller.UserWebservice]: AutowiredFieldElement for com.diego.service.UserService com.diego.controller.UserWebservice.userService
+2015-02-27 18:51:27,350 DEBUG [main] Eagerly caching bean 'userWebservice' to allow for resolving potential circular references
+2015-02-27 18:51:27,350 DEBUG [main] Processing injected element of bean 'userWebservice': AutowiredFieldElement for com.diego.service.UserService com.diego.controller.UserWebservice.userService
+2015-02-27 18:51:27,350 DEBUG [main] Returning cached instance of singleton bean 'userServiceImpl'
+2015-02-27 18:51:27,350 DEBUG [main] Autowiring by type from bean name 'userWebservice' to bean named 'userServiceImpl'
+2015-02-27 18:51:27,351 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,351 DEBUG [main] Finished creating instance of bean 'userWebservice'
+2015-02-27 18:51:27,351 DEBUG [main] Returning cached instance of singleton bean 'userDaoImpl'
+2015-02-27 18:51:27,351 DEBUG [main] Returning cached instance of singleton bean 'userServiceImpl'
+2015-02-27 18:51:27,351 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-02-27 18:51:27,351 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-02-27 18:51:27,351 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-02-27 18:51:27,352 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-02-27 18:51:27,352 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.filterChains'
+2015-02-27 18:51:27,352 DEBUG [main] Creating instance of bean 'org.springframework.security.filterChains'
+2015-02-27 18:51:27,352 DEBUG [main] Eagerly caching bean 'org.springframework.security.filterChains' to allow for resolving potential circular references
+2015-02-27 18:51:27,354 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.web.DefaultSecurityFilterChain#0'
+2015-02-27 18:51:27,354 DEBUG [main] Creating instance of bean 'org.springframework.security.web.DefaultSecurityFilterChain#0'
+2015-02-27 18:51:27,354 DEBUG [main] Creating instance of bean '(inner bean)#bfd10a'
+2015-02-27 18:51:27,356 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,356 DEBUG [main] Finished creating instance of bean '(inner bean)#bfd10a'
+2015-02-27 18:51:27,356 DEBUG [main] Creating instance of bean '(inner bean)#f38cf0'
+2015-02-27 18:51:27,357 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.web.context.HttpSessionSecurityContextRepository#0'
+2015-02-27 18:51:27,357 DEBUG [main] Creating instance of bean 'org.springframework.security.web.context.HttpSessionSecurityContextRepository#0'
+2015-02-27 18:51:27,361 DEBUG [main] Eagerly caching bean 'org.springframework.security.web.context.HttpSessionSecurityContextRepository#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,362 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,362 DEBUG [main] Finished creating instance of bean 'org.springframework.security.web.context.HttpSessionSecurityContextRepository#0'
+2015-02-27 18:51:27,363 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,363 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,364 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,364 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,364 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,364 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,365 DEBUG [main] Invoking afterPropertiesSet() on bean with name '(inner bean)#f38cf0'
+2015-02-27 18:51:27,366 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,367 DEBUG [main] Finished creating instance of bean '(inner bean)#f38cf0'
+2015-02-27 18:51:27,367 DEBUG [main] Creating instance of bean '(inner bean)#d5cabc'
+2015-02-27 18:51:27,368 DEBUG [main] Creating instance of bean '(inner bean)#1f2af1c'
+2015-02-27 18:51:27,371 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,371 DEBUG [main] Finished creating instance of bean '(inner bean)#1f2af1c'
+2015-02-27 18:51:27,379 DEBUG [main] No property editor [org.springframework.security.web.authentication.logout.LogoutSuccessHandlerEditor] found for type org.springframework.security.web.authentication.logout.LogoutSuccessHandler according to 'Editor' suffix convention
+2015-02-27 18:51:27,381 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,381 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,381 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,381 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,381 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,381 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,386 DEBUG [main] Creating instance of bean '(inner bean)#31ff23'
+2015-02-27 18:51:27,390 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,390 DEBUG [main] Finished creating instance of bean '(inner bean)#31ff23'
+2015-02-27 18:51:27,390 DEBUG [main] Invoking afterPropertiesSet() on bean with name '(inner bean)#d5cabc'
+2015-02-27 18:51:27,390 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,392 DEBUG [main] Finished creating instance of bean '(inner bean)#d5cabc'
+2015-02-27 18:51:27,392 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0'
+2015-02-27 18:51:27,392 DEBUG [main] Creating instance of bean 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0'
+2015-02-27 18:51:27,394 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,394 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,394 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,395 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,395 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,395 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,401 DEBUG [main] Eagerly caching bean 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,404 DEBUG [main] Creating instance of bean '(inner bean)#9dd6e2'
+2015-02-27 18:51:27,406 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,406 DEBUG [main] Finished creating instance of bean '(inner bean)#9dd6e2'
+2015-02-27 18:51:27,406 DEBUG [main] Creating instance of bean '(inner bean)#1efc208'
+2015-02-27 18:51:27,409 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.web.savedrequest.HttpSessionRequestCache#0'
+2015-02-27 18:51:27,409 DEBUG [main] Creating instance of bean 'org.springframework.security.web.savedrequest.HttpSessionRequestCache#0'
+2015-02-27 18:51:27,409 DEBUG [main] Eagerly caching bean 'org.springframework.security.web.savedrequest.HttpSessionRequestCache#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,410 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.web.PortResolverImpl#0'
+2015-02-27 18:51:27,410 DEBUG [main] Creating instance of bean 'org.springframework.security.web.PortResolverImpl#0'
+2015-02-27 18:51:27,410 DEBUG [main] Eagerly caching bean 'org.springframework.security.web.PortResolverImpl#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,410 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.web.PortMapperImpl#0'
+2015-02-27 18:51:27,410 DEBUG [main] Creating instance of bean 'org.springframework.security.web.PortMapperImpl#0'
+2015-02-27 18:51:27,411 DEBUG [main] Eagerly caching bean 'org.springframework.security.web.PortMapperImpl#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,412 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,413 DEBUG [main] Finished creating instance of bean 'org.springframework.security.web.PortMapperImpl#0'
+2015-02-27 18:51:27,413 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,413 DEBUG [main] Finished creating instance of bean 'org.springframework.security.web.PortResolverImpl#0'
+2015-02-27 18:51:27,413 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,413 DEBUG [main] Finished creating instance of bean 'org.springframework.security.web.savedrequest.HttpSessionRequestCache#0'
+2015-02-27 18:51:27,414 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,414 DEBUG [main] Finished creating instance of bean '(inner bean)#1efc208'
+2015-02-27 18:51:27,414 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0'
+2015-02-27 18:51:27,414 DEBUG [main] Creating instance of bean 'org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0'
+2015-02-27 18:51:27,415 DEBUG [main] Creating instance of bean '(inner bean)#3cbb4b'
+2015-02-27 18:51:27,418 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,419 DEBUG [main] Finished creating instance of bean '(inner bean)#3cbb4b'
+2015-02-27 18:51:27,420 DEBUG [main] Eagerly caching bean 'org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,421 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,421 DEBUG [main] Finished creating instance of bean 'org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0'
+2015-02-27 18:51:27,421 DEBUG [main] Creating instance of bean '(inner bean)#1a73d30'
+2015-02-27 18:51:27,423 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,423 DEBUG [main] Finished creating instance of bean '(inner bean)#1a73d30'
+2015-02-27 18:51:27,424 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.authentication.ProviderManager#0'
+2015-02-27 18:51:27,424 DEBUG [main] Creating instance of bean 'org.springframework.security.authentication.ProviderManager#0'
+2015-02-27 18:51:27,424 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.authentication.AnonymousAuthenticationProvider#0'
+2015-02-27 18:51:27,424 DEBUG [main] Creating instance of bean 'org.springframework.security.authentication.AnonymousAuthenticationProvider#0'
+2015-02-27 18:51:27,425 DEBUG [main] Eagerly caching bean 'org.springframework.security.authentication.AnonymousAuthenticationProvider#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,426 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'org.springframework.security.authentication.AnonymousAuthenticationProvider#0'
+2015-02-27 18:51:27,426 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,426 DEBUG [main] Finished creating instance of bean 'org.springframework.security.authentication.AnonymousAuthenticationProvider#0'
+2015-02-27 18:51:27,426 DEBUG [main] Creating shared instance of singleton bean 'authenticationManager'
+2015-02-27 18:51:27,426 DEBUG [main] Creating instance of bean 'authenticationManager'
+2015-02-27 18:51:27,426 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.authentication.dao.DaoAuthenticationProvider#0'
+2015-02-27 18:51:27,426 DEBUG [main] Creating instance of bean 'org.springframework.security.authentication.dao.DaoAuthenticationProvider#0'
+2015-02-27 18:51:27,432 DEBUG [main] Eagerly caching bean 'org.springframework.security.authentication.dao.DaoAuthenticationProvider#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,433 DEBUG [main] Returning cached instance of singleton bean 'customUserDetailsService'
+2015-02-27 18:51:27,434 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'org.springframework.security.authentication.dao.DaoAuthenticationProvider#0'
+2015-02-27 18:51:27,434 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,435 DEBUG [main] Finished creating instance of bean 'org.springframework.security.authentication.dao.DaoAuthenticationProvider#0'
+2015-02-27 18:51:27,438 DEBUG [main] Eagerly caching bean 'authenticationManager' to allow for resolving potential circular references
+2015-02-27 18:51:27,439 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0'
+2015-02-27 18:51:27,439 DEBUG [main] Creating instance of bean 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0'
+2015-02-27 18:51:27,444 DEBUG [main] Eagerly caching bean 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,444 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,445 DEBUG [main] Finished creating instance of bean 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0'
+2015-02-27 18:51:27,445 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'authenticationManager'
+2015-02-27 18:51:27,445 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,445 DEBUG [main] Finished creating instance of bean 'authenticationManager'
+2015-02-27 18:51:27,446 DEBUG [main] Eagerly caching bean 'org.springframework.security.authentication.ProviderManager#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,446 DEBUG [main] Creating instance of bean '(inner bean)#90fa05'
+2015-02-27 18:51:27,451 DEBUG [main] Returning cached instance of singleton bean 'authenticationManager'
+2015-02-27 18:51:27,452 DEBUG [main] Invoking afterPropertiesSet() on bean with name '(inner bean)#90fa05'
+2015-02-27 18:51:27,452 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,493 DEBUG [main] Finished creating instance of bean '(inner bean)#90fa05'
+2015-02-27 18:51:27,493 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,494 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'org.springframework.security.authentication.ProviderManager#0'
+2015-02-27 18:51:27,494 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,494 DEBUG [main] Finished creating instance of bean 'org.springframework.security.authentication.ProviderManager#0'
+2015-02-27 18:51:27,494 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0'
+2015-02-27 18:51:27,494 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,497 DEBUG [main] Finished creating instance of bean 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0'
+2015-02-27 18:51:27,497 DEBUG [main] Creating instance of bean '(inner bean)#11e1bbf'
+2015-02-27 18:51:27,497 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0'
+2015-02-27 18:51:27,500 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,500 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,500 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,500 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,500 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,500 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,503 DEBUG [main] Invoking afterPropertiesSet() on bean with name '(inner bean)#11e1bbf'
+2015-02-27 18:51:27,503 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,504 DEBUG [main] Finished creating instance of bean '(inner bean)#11e1bbf'
+2015-02-27 18:51:27,504 DEBUG [main] Creating instance of bean '(inner bean)#181497d'
+2015-02-27 18:51:27,505 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.savedrequest.HttpSessionRequestCache#0'
+2015-02-27 18:51:27,506 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,506 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,506 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,506 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,506 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,506 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,507 DEBUG [main] Invoking afterPropertiesSet() on bean with name '(inner bean)#181497d'
+2015-02-27 18:51:27,507 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,509 DEBUG [main] Finished creating instance of bean '(inner bean)#181497d'
+2015-02-27 18:51:27,509 DEBUG [main] Creating instance of bean '(inner bean)#ae1cf'
+2015-02-27 18:51:27,510 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,510 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,510 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,510 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,510 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,511 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,512 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.authentication.ProviderManager#0'
+2015-02-27 18:51:27,512 DEBUG [main] Creating instance of bean '(inner bean)#1f2af1c#1'
+2015-02-27 18:51:27,512 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,512 DEBUG [main] Finished creating instance of bean '(inner bean)#1f2af1c#1'
+2015-02-27 18:51:27,512 DEBUG [main] Creating shared instance of singleton bean 'authenticationEntryPoint'
+2015-02-27 18:51:27,512 DEBUG [main] Creating instance of bean 'authenticationEntryPoint'
+2015-02-27 18:51:27,513 DEBUG [main] Eagerly caching bean 'authenticationEntryPoint' to allow for resolving potential circular references
+2015-02-27 18:51:27,513 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,513 DEBUG [main] Finished creating instance of bean 'authenticationEntryPoint'
+2015-02-27 18:51:27,514 DEBUG [main] Invoking afterPropertiesSet() on bean with name '(inner bean)#ae1cf'
+2015-02-27 18:51:27,514 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,515 DEBUG [main] Finished creating instance of bean '(inner bean)#ae1cf'
+2015-02-27 18:51:27,515 DEBUG [main] Creating instance of bean '(inner bean)#12549c4'
+2015-02-27 18:51:27,517 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,517 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,518 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,519 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,519 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,519 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,520 DEBUG [main] Invoking afterPropertiesSet() on bean with name '(inner bean)#12549c4'
+2015-02-27 18:51:27,521 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,521 DEBUG [main] Finished creating instance of bean '(inner bean)#12549c4'
+2015-02-27 18:51:27,522 DEBUG [main] Creating instance of bean '(inner bean)#1c7f37d'
+2015-02-27 18:51:27,522 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.context.HttpSessionSecurityContextRepository#0'
+2015-02-27 18:51:27,522 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0'
+2015-02-27 18:51:27,524 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,524 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,524 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,524 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,524 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,524 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,525 DEBUG [main] Creating instance of bean '(inner bean)#fccada'
+2015-02-27 18:51:27,525 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,526 DEBUG [main] Finished creating instance of bean '(inner bean)#fccada'
+2015-02-27 18:51:27,526 DEBUG [main] Invoking afterPropertiesSet() on bean with name '(inner bean)#1c7f37d'
+2015-02-27 18:51:27,526 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,527 DEBUG [main] Finished creating instance of bean '(inner bean)#1c7f37d'
+2015-02-27 18:51:27,528 DEBUG [main] Creating instance of bean '(inner bean)#59cbda'
+2015-02-27 18:51:27,530 DEBUG [main] Returning cached instance of singleton bean 'authenticationEntryPoint'
+2015-02-27 18:51:27,530 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.savedrequest.HttpSessionRequestCache#0'
+2015-02-27 18:51:27,531 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,531 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,531 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,531 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,531 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,531 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,535 DEBUG [main] Creating instance of bean '(inner bean)#1fbc355'
+2015-02-27 18:51:27,536 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,537 DEBUG [main] Finished creating instance of bean '(inner bean)#1fbc355'
+2015-02-27 18:51:27,537 DEBUG [main] Invoking afterPropertiesSet() on bean with name '(inner bean)#59cbda'
+2015-02-27 18:51:27,537 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,538 DEBUG [main] Finished creating instance of bean '(inner bean)#59cbda'
+2015-02-27 18:51:27,538 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0'
+2015-02-27 18:51:27,538 DEBUG [main] Creating instance of bean 'org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0'
+2015-02-27 18:51:27,540 DEBUG [main] Eagerly caching bean 'org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,542 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.access.vote.AffirmativeBased#0'
+2015-02-27 18:51:27,542 DEBUG [main] Creating instance of bean 'org.springframework.security.access.vote.AffirmativeBased#0'
+2015-02-27 18:51:27,542 DEBUG [main] Creating instance of bean '(inner bean)#509df8'
+2015-02-27 18:51:27,544 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler#0'
+2015-02-27 18:51:27,544 DEBUG [main] Creating instance of bean 'org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler#0'
+2015-02-27 18:51:27,545 DEBUG [main] Eagerly caching bean 'org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,546 DEBUG [main] Finished creating instance of bean 'org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler#0'
+2015-02-27 18:51:27,546 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,546 DEBUG [main] Finished creating instance of bean '(inner bean)#509df8'
+2015-02-27 18:51:27,547 DEBUG [main] Eagerly caching bean 'org.springframework.security.access.vote.AffirmativeBased#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,551 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'org.springframework.security.access.vote.AffirmativeBased#0'
+2015-02-27 18:51:27,551 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,551 DEBUG [main] Finished creating instance of bean 'org.springframework.security.access.vote.AffirmativeBased#0'
+2015-02-27 18:51:27,551 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.authentication.ProviderManager#0'
+2015-02-27 18:51:27,552 DEBUG [main] Creating instance of bean '(inner bean)#e391c4'
+2015-02-27 18:51:27,552 DEBUG [main] Creating instance of bean '(inner bean)#1603522'
+2015-02-27 18:51:27,555 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,556 DEBUG [main] Finished creating instance of bean '(inner bean)#1603522'
+2015-02-27 18:51:27,556 DEBUG [main] Creating instance of bean '(inner bean)#7e5130'
+2015-02-27 18:51:27,559 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,563 DEBUG [main] Finished creating instance of bean '(inner bean)#7e5130'
+2015-02-27 18:51:27,563 DEBUG [main] Creating instance of bean '(inner bean)#1db9f45'
+2015-02-27 18:51:27,564 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,564 DEBUG [main] Finished creating instance of bean '(inner bean)#1db9f45'
+2015-02-27 18:51:27,564 DEBUG [main] Creating instance of bean '(inner bean)#7efa96'
+2015-02-27 18:51:27,564 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,564 DEBUG [main] Finished creating instance of bean '(inner bean)#7efa96'
+2015-02-27 18:51:27,564 DEBUG [main] Creating instance of bean '(inner bean)#800aa1'
+2015-02-27 18:51:27,565 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,565 DEBUG [main] Finished creating instance of bean '(inner bean)#800aa1'
+2015-02-27 18:51:27,565 DEBUG [main] Creating instance of bean '(inner bean)#41a12f'
+2015-02-27 18:51:27,565 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,565 DEBUG [main] Finished creating instance of bean '(inner bean)#41a12f'
+2015-02-27 18:51:27,565 DEBUG [main] Creating instance of bean '(inner bean)#5b78cf'
+2015-02-27 18:51:27,565 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,565 DEBUG [main] Finished creating instance of bean '(inner bean)#5b78cf'
+2015-02-27 18:51:27,565 DEBUG [main] Creating instance of bean '(inner bean)#1588325'
+2015-02-27 18:51:27,567 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,567 DEBUG [main] Finished creating instance of bean '(inner bean)#1588325'
+2015-02-27 18:51:27,567 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler#0'
+2015-02-27 18:51:27,569 DEBUG [main] Adding web access control expression 'permitAll', for Ant [pattern='/']
+2015-02-27 18:51:27,595 DEBUG [main] Adding web access control expression 'permitAll', for Ant [pattern='/login.jsp']
+2015-02-27 18:51:27,595 DEBUG [main] Adding web access control expression 'permitAll', for Ant [pattern='/loginerr']
+2015-02-27 18:51:27,596 DEBUG [main] Adding web access control expression 'hasRole('DIEGO_PERMISSION')', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+2015-02-27 18:51:27,599 DEBUG [main] Finished creating instance of bean '(inner bean)#e391c4'
+2015-02-27 18:51:27,600 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0'
+2015-02-27 18:51:27,600 DEBUG [main] Validated configuration attributes
+2015-02-27 18:51:27,600 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,601 DEBUG [main] Finished creating instance of bean 'org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0'
+2015-02-27 18:51:27,603 INFO [main] Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@16dba0a, org.springframework.security.web.authentication.logout.LogoutFilter@d0f59e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ad5fab, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@63f09e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14a55e5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14d581b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d36ff3, org.springframework.security.web.session.SessionManagementFilter@15af049, org.springframework.security.web.access.ExceptionTranslationFilter@1555185, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b28c9]
+2015-02-27 18:51:27,603 DEBUG [main] Eagerly caching bean 'org.springframework.security.web.DefaultSecurityFilterChain#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,603 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,604 DEBUG [main] Finished creating instance of bean 'org.springframework.security.web.DefaultSecurityFilterChain#0'
+2015-02-27 18:51:27,604 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'org.springframework.security.filterChains'
+2015-02-27 18:51:27,605 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,605 DEBUG [main] Finished creating instance of bean 'org.springframework.security.filterChains'
+2015-02-27 18:51:27,605 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.filterChainProxy'
+2015-02-27 18:51:27,605 DEBUG [main] Creating instance of bean 'org.springframework.security.filterChainProxy'
+2015-02-27 18:51:27,606 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.filterChains'
+2015-02-27 18:51:27,606 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,607 DEBUG [main] No property editor [org.springframework.security.web.SecurityFilterChainEditor] found for type org.springframework.security.web.SecurityFilterChain according to 'Editor' suffix convention
+2015-02-27 18:51:27,608 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,608 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,608 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,608 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,608 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,608 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,612 DEBUG [main] Eagerly caching bean 'org.springframework.security.filterChainProxy' to allow for resolving potential circular references
+2015-02-27 18:51:27,613 DEBUG [main] Creating instance of bean '(inner bean)#13c33b7'
+2015-02-27 18:51:27,614 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,614 DEBUG [main] Finished creating instance of bean '(inner bean)#13c33b7'
+2015-02-27 18:51:27,614 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'org.springframework.security.filterChainProxy'
+2015-02-27 18:51:27,615 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,616 DEBUG [main] Finished creating instance of bean 'org.springframework.security.filterChainProxy'
+2015-02-27 18:51:27,616 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.PortMapperImpl#0'
+2015-02-27 18:51:27,616 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.PortResolverImpl#0'
+2015-02-27 18:51:27,616 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.authentication.ProviderManager#0'
+2015-02-27 18:51:27,616 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.context.HttpSessionSecurityContextRepository#0'
+2015-02-27 18:51:27,617 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0'
+2015-02-27 18:51:27,617 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.savedrequest.HttpSessionRequestCache#0'
+2015-02-27 18:51:27,617 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler#0'
+2015-02-27 18:51:27,617 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.access.vote.AffirmativeBased#0'
+2015-02-27 18:51:27,617 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0'
+2015-02-27 18:51:27,617 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0'
+2015-02-27 18:51:27,617 DEBUG [main] Creating instance of bean 'org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0'
+2015-02-27 18:51:27,617 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0'
+2015-02-27 18:51:27,618 DEBUG [main] Eagerly caching bean 'org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,618 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,618 DEBUG [main] Finished creating instance of bean 'org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0'
+2015-02-27 18:51:27,618 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.authentication.AnonymousAuthenticationProvider#0'
+2015-02-27 18:51:27,618 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0'
+2015-02-27 18:51:27,618 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.userDetailsServiceFactory'
+2015-02-27 18:51:27,618 DEBUG [main] Creating instance of bean 'org.springframework.security.userDetailsServiceFactory'
+2015-02-27 18:51:27,619 DEBUG [main] Eagerly caching bean 'org.springframework.security.userDetailsServiceFactory' to allow for resolving potential circular references
+2015-02-27 18:51:27,619 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,619 DEBUG [main] Finished creating instance of bean 'org.springframework.security.userDetailsServiceFactory'
+2015-02-27 18:51:27,619 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.web.DefaultSecurityFilterChain#0'
+2015-02-27 18:51:27,619 DEBUG [main] Returning cached instance of singleton bean 'authenticationEntryPoint'
+2015-02-27 18:51:27,619 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.authentication.dao.DaoAuthenticationProvider#0'
+2015-02-27 18:51:27,619 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0'
+2015-02-27 18:51:27,619 DEBUG [main] Returning cached instance of singleton bean 'authenticationManager'
+2015-02-27 18:51:27,619 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0'
+2015-02-27 18:51:27,619 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0'
+2015-02-27 18:51:27,620 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.access.vote.AffirmativeBased#1'
+2015-02-27 18:51:27,620 DEBUG [main] Creating instance of bean 'org.springframework.security.access.vote.AffirmativeBased#1'
+2015-02-27 18:51:27,621 DEBUG [main] Creating instance of bean '(inner bean)#18e899c'
+2015-02-27 18:51:27,621 DEBUG [main] Creating instance of bean '(inner bean)#b52a28'
+2015-02-27 18:51:27,622 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0'
+2015-02-27 18:51:27,622 DEBUG [main] Finished creating instance of bean '(inner bean)#b52a28'
+2015-02-27 18:51:27,623 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,624 DEBUG [main] Finished creating instance of bean '(inner bean)#18e899c'
+2015-02-27 18:51:27,624 DEBUG [main] Creating instance of bean '(inner bean)#3299f6'
+2015-02-27 18:51:27,624 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,625 DEBUG [main] Finished creating instance of bean '(inner bean)#3299f6'
+2015-02-27 18:51:27,625 DEBUG [main] Creating instance of bean '(inner bean)#952905'
+2015-02-27 18:51:27,626 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,626 DEBUG [main] Finished creating instance of bean '(inner bean)#952905'
+2015-02-27 18:51:27,626 DEBUG [main] Eagerly caching bean 'org.springframework.security.access.vote.AffirmativeBased#1' to allow for resolving potential circular references
+2015-02-27 18:51:27,626 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'org.springframework.security.access.vote.AffirmativeBased#1'
+2015-02-27 18:51:27,626 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,626 DEBUG [main] Finished creating instance of bean 'org.springframework.security.access.vote.AffirmativeBased#1'
+2015-02-27 18:51:27,626 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0'
+2015-02-27 18:51:27,626 DEBUG [main] Creating instance of bean 'org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0'
+2015-02-27 18:51:27,627 DEBUG [main] Eagerly caching bean 'org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0' to allow for resolving potential circular references
+2015-02-27 18:51:27,628 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.access.vote.AffirmativeBased#1'
+2015-02-27 18:51:27,628 DEBUG [main] Creating instance of bean '(inner bean)#ad7d80'
+2015-02-27 18:51:27,630 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,630 DEBUG [main] Finished creating instance of bean '(inner bean)#ad7d80'
+2015-02-27 18:51:27,631 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0'
+2015-02-27 18:51:27,631 DEBUG [main] Creating instance of bean '(inner bean)#1978933'
+2015-02-27 18:51:27,632 DEBUG [main] Creating instance of bean '(inner bean)#1e9f5cc'
+2015-02-27 18:51:27,632 DEBUG [main] Creating instance of bean '(inner bean)#831a91'
+2015-02-27 18:51:27,632 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler#0'
+2015-02-27 18:51:27,634 DEBUG [main] Finished creating instance of bean '(inner bean)#831a91'
+2015-02-27 18:51:27,635 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,635 DEBUG [main] Finished creating instance of bean '(inner bean)#1e9f5cc'
+2015-02-27 18:51:27,636 DEBUG [main] Invoking afterPropertiesSet() on bean with name '(inner bean)#1978933'
+2015-02-27 18:51:27,636 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,636 DEBUG [main] Finished creating instance of bean '(inner bean)#1978933'
+2015-02-27 18:51:27,636 DEBUG [main] Invoking afterPropertiesSet() on bean with name 'org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0'
+2015-02-27 18:51:27,636 DEBUG [main] Validated configuration attributes
+2015-02-27 18:51:27,636 DEBUG [main] Finished creating instance of bean 'org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0'
+2015-02-27 18:51:27,636 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor'
+2015-02-27 18:51:27,636 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2015-02-27 18:51:27,636 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-02-27 18:51:27,636 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-02-27 18:51:27,638 DEBUG [main] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@14bc4e6]
+2015-02-27 18:51:27,638 DEBUG [main] Returning cached instance of singleton bean 'lifecycleProcessor'
+2015-02-27 18:51:27,640 DEBUG [main] Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
+2015-02-27 18:51:27,640 DEBUG [main] Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
+2015-02-27 18:51:27,640 DEBUG [main] Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]
+2015-02-27 18:51:27,640 DEBUG [main] Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2015-02-27 18:51:27,641 DEBUG [main] Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name spring.liveBeansView.mbeanDomain is not bound in this Context
+2015-02-27 18:51:27,641 DEBUG [main] Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2015-02-27 18:51:27,641 DEBUG [main] JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name spring.liveBeansView.mbeanDomain is not bound in this Context. Returning null.
+2015-02-27 18:51:27,641 DEBUG [main] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2015-02-27 18:51:27,641 DEBUG [main] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2015-02-27 18:51:27,641 DEBUG [main] Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2015-02-27 18:51:27,641 DEBUG [main] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2015-02-27 18:51:27,641 INFO [main] Root WebApplicationContext: initialization completed in 1031 ms
+2015-02-27 18:51:27,645 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,645 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,645 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,645 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,645 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,645 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,645 DEBUG [main] Initializing filter 'springSecurityFilterChain'
+2015-02-27 18:51:27,647 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.security.filterChainProxy'
+2015-02-27 18:51:27,647 DEBUG [main] Filter 'springSecurityFilterChain' configured successfully
+2015-02-27 18:51:27,654 DEBUG [main] Initializing servlet 'dispatcher'
+2015-02-27 18:51:27,655 DEBUG [main] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,655 DEBUG [main] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2015-02-27 18:51:27,655 DEBUG [main] Adding [jndiProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,655 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,655 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,655 DEBUG [main] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2015-02-27 18:51:27,655 INFO [main] FrameworkServlet 'dispatcher': initialization started
+2015-02-27 18:51:27,655 DEBUG [main] Servlet with name 'dispatcher' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Fri Feb 27 18:51:26 IST 2015]; root of context hierarchy]
+2015-02-27 18:51:27,655 DEBUG [main] Searching for key 'spring.profiles.active' in [servletConfigInitParams]
+2015-02-27 18:51:27,655 DEBUG [main] Searching for key 'spring.profiles.active' in [servletContextInitParams]
+2015-02-27 18:51:27,656 DEBUG [main] Searching for key 'spring.profiles.active' in [jndiProperties]
+2015-02-27 18:51:27,656 DEBUG [main] Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2015-02-27 18:51:27,656 DEBUG [main] Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name spring.profiles.active is not bound in this Context
+2015-02-27 18:51:27,656 DEBUG [main] Looking up JNDI object with name [spring.profiles.active]
+2015-02-27 18:51:27,656 DEBUG [main] JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name spring.profiles.active is not bound in this Context. Returning null.
+2015-02-27 18:51:27,656 DEBUG [main] Searching for key 'spring.profiles.active' in [systemProperties]
+2015-02-27 18:51:27,656 DEBUG [main] Searching for key 'spring.profiles.active' in [systemEnvironment]
+2015-02-27 18:51:27,656 DEBUG [main] Could not find key 'spring.profiles.active' in any property source. Returning [null]
+2015-02-27 18:51:27,656 DEBUG [main] Searching for key 'spring.profiles.default' in [servletConfigInitParams]
+2015-02-27 18:51:27,656 DEBUG [main] Searching for key 'spring.profiles.default' in [servletContextInitParams]
+2015-02-27 18:51:27,656 DEBUG [main] Searching for key 'spring.profiles.default' in [jndiProperties]
+2015-02-27 18:51:27,656 DEBUG [main] Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2015-02-27 18:51:27,656 DEBUG [main] Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name spring.profiles.default is not bound in this Context
+2015-02-27 18:51:27,656 DEBUG [main] Looking up JNDI object with name [spring.profiles.default]
+2015-02-27 18:51:27,656 DEBUG [main] JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name spring.profiles.default is not bound in this Context. Returning null.
+2015-02-27 18:51:27,656 DEBUG [main] Searching for key 'spring.profiles.default' in [systemProperties]
+2015-02-27 18:51:27,656 DEBUG [main] Searching for key 'spring.profiles.default' in [systemEnvironment]
+2015-02-27 18:51:27,657 DEBUG [main] Could not find key 'spring.profiles.default' in any property source. Returning [null]
+2015-02-27 18:51:27,657 DEBUG [main] Searching for key 'spring.profiles.default' in [servletConfigInitParams]
+2015-02-27 18:51:27,657 DEBUG [main] Searching for key 'spring.profiles.default' in [servletContextInitParams]
+2015-02-27 18:51:27,657 DEBUG [main] Searching for key 'spring.profiles.default' in [jndiProperties]
+2015-02-27 18:51:27,657 DEBUG [main] Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2015-02-27 18:51:27,657 DEBUG [main] Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name spring.profiles.default is not bound in this Context
+2015-02-27 18:51:27,657 DEBUG [main] Looking up JNDI object with name [spring.profiles.default]
+2015-02-27 18:51:27,657 DEBUG [main] JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name spring.profiles.default is not bound in this Context. Returning null.
+2015-02-27 18:51:27,657 DEBUG [main] Searching for key 'spring.profiles.default' in [systemProperties]
+2015-02-27 18:51:27,657 DEBUG [main] Searching for key 'spring.profiles.default' in [systemEnvironment]
+2015-02-27 18:51:27,657 DEBUG [main] Could not find key 'spring.profiles.default' in any property source. Returning [null]
+2015-02-27 18:51:27,659 DEBUG [main] Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2015-02-27 18:51:27,659 DEBUG [main] Replacing [servletConfigInitParams] PropertySource with [servletConfigInitParams]
+2015-02-27 18:51:27,659 INFO [main] Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Feb 27 18:51:27 IST 2015]; parent: Root WebApplicationContext
+2015-02-27 18:51:27,661 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,661 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,661 DEBUG [main] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2015-02-27 18:51:27,661 INFO [main] Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2015-02-27 18:51:27,662 DEBUG [main] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2015-02-27 18:51:27,662 DEBUG [main] Loading schema mappings from [META-INF/spring.schemas]
+2015-02-27 18:51:27,665 DEBUG [main] Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.4.xsd=org/springframework/data/repository/config/spring-repository-1.4.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.3.xsd, http://www.springframework.org/schema/security/spring-security-3.0.3.xsd=org/springframework/security/config/spring-security-3.0.3.xsd, http://www.springframework.org/schema/security/spring-security-2.0.1.xsd=org/springframework/security/config/spring-security-2.0.1.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/security/spring-security-2.0.xsd=org/springframework/security/config/spring-security-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository.xsd=org/springframework/data/repository/config/spring-repository-1.7.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.7.xsd=org/springframework/data/repository/config/spring-repository-1.7.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/security/spring-security-2.0.4.xsd=org/springframework/security/config/spring-security-2.0.4.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/security/spring-security-3.2.xsd=org/springframework/security/config/spring-security-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.2.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.6.xsd=org/springframework/data/repository/config/spring-repository-1.6.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/security/spring-security-3.1.xsd=org/springframework/security/config/spring-security-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.0.xsd=org/springframework/data/repository/config/spring-repository-1.0.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.1.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.1.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd=org/springframework/data/repository/config/spring-repository-1.5.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/security/spring-security-2.0.2.xsd=org/springframework/security/config/spring-security-2.0.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/security/spring-security.xsd=org/springframework/security/config/spring-security-3.2.xsd, http://www.springframework.org/schema/security/spring-security-3.0.xsd=org/springframework/security/config/spring-security-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.0.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.0.xsd}
+2015-02-27 18:51:27,666 DEBUG [main] Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2015-02-27 18:51:27,670 DEBUG [main] Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2015-02-27 18:51:27,671 DEBUG [main] Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2015-02-27 18:51:27,672 DEBUG [main] Loading bean definitions
+2015-02-27 18:51:27,676 DEBUG [main] Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/data/repository=org.springframework.data.repository.config.RepositoryNameSpaceHandler, http://www.springframework.org/schema/data/jpa=org.springframework.data.jpa.repository.config.JpaRepositoryNameSpaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/security=org.springframework.security.config.SecurityNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2015-02-27 18:51:27,676 DEBUG [main] Adding [systemProperties] PropertySource with lowest search precedence
+2015-02-27 18:51:27,676 DEBUG [main] Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-02-27 18:51:27,676 DEBUG [main] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2015-02-27 18:51:27,677 DEBUG [main] Looking for matching resources in directory tree [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego]
+2015-02-27 18:51:27,677 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:27,678 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:27,678 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\controller] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:27,679 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\dao] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:27,679 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\logger] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:27,680 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\model] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:27,680 DEBUG [main] Searching directory [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\service] for files matching pattern [D:/Amitabha/Workspaces/RnD/diego/target/diego/WEB-INF/classes/com/diego/**/*.class]
+2015-02-27 18:51:27,681 DEBUG [main] Resolved location pattern [classpath*:com/diego/**/*.class] to resources [file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth\AuthenticationEntryPoint.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth\CustomUserDetails.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth\CustomUserDetailsService.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\controller\LoginController.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\controller\UserWebservice.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\dao\UserDao.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\dao\UserDaoImpl.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\logger\DiegoLog4j2LoggerImpl.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\logger\DiegoLogFactory.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\logger\DiegoLogger.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\model\Permission.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\model\Role.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\model\User.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\service\UserService.class], file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\service\UserServiceImpl.class]]
+2015-02-27 18:51:27,682 DEBUG [main] Identified candidate component class: file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\auth\CustomUserDetailsService.class]
+2015-02-27 18:51:27,682 DEBUG [main] Identified candidate component class: file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\controller\LoginController.class]
+2015-02-27 18:51:27,683 DEBUG [main] Identified candidate component class: file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\controller\UserWebservice.class]
+2015-02-27 18:51:27,683 DEBUG [main] Identified candidate component class: file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\dao\UserDaoImpl.class]
+2015-02-27 18:51:27,686 DEBUG [main] Identified candidate component class: file [D:\Amitabha\Workspaces\RnD\diego\target\diego\WEB-INF\classes\com\diego\service\UserServiceImpl.class]
+2015-02-27 18:51:27,686 DEBUG [main] Loaded 9 bean definitions from location pattern [/WEB-INF/dispatcher-servlet.xml]
+2015-02-27 18:51:27,686 DEBUG [main] Bean factory for WebApplicationContext for namespace 'dispatcher-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@9d5793: defining beans [customUserDetailsService,loginController,userWebservice,userDaoImpl,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1320a41
+2015-02-27 18:51:27,687 DEBUG [main] Registering scope 'request' with implementation [org.springframework.web.context.request.RequestScope@4b2b75]
+2015-02-27 18:51:27,687 DEBUG [main] Registering scope 'session' with implementation [org.springframework.web.context.request.SessionScope@1123eb0]
+2015-02-27 18:51:27,687 DEBUG [main] Registering scope 'globalSession' with implementation [org.springframework.web.context.request.SessionScope@d1a1ab]
+2015-02-27 18:51:27,687 DEBUG [main] Registering scope 'application' with implementation [org.springframework.web.context.support.ServletContextScope@cd2192]
+2015-02-27 18:51:27,687 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-02-27 18:51:27,687 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-02-27 18:51:27,687 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,687 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-02-27 18:51:27,690 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-02-27 18:51:27,690 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-02-27 18:51:27,690 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,690 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-02-27 18:51:27,690 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-02-27 18:51:27,690 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-02-27 18:51:27,690 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,690 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-02-27 18:51:27,690 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-02-27 18:51:27,690 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-02-27 18:51:27,690 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,691 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-02-27 18:51:27,691 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-02-27 18:51:27,691 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-02-27 18:51:27,691 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,691 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-02-27 18:51:27,691 DEBUG [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-02-27 18:51:27,691 DEBUG [main] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-02-27 18:51:27,691 DEBUG [main] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2015-02-27 18:51:27,691 DEBUG [main] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-02-27 18:51:27,691 DEBUG [main] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@cb2185]
+2015-02-27 18:51:27,691 DEBUG [main] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@5ce40]
+2015-02-27 18:51:27,691 DEBUG [main] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@d9cbcb]
+2015-02-27 18:51:27,692 DEBUG [main] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9d5793: defining beans [customUserDetailsService,loginController,userWebservice,userDaoImpl,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1320a41
+2015-02-27 18:51:27,692 DEBUG [main] Creating shared instance of singleton bean 'customUserDetailsService'
+2015-02-27 18:51:27,692 DEBUG [main] Creating instance of bean 'customUserDetailsService'
+2015-02-27 18:51:27,692 DEBUG [main] Registered injected element on class [com.diego.auth.CustomUserDetailsService]: AutowiredFieldElement for private com.diego.service.UserService com.diego.auth.CustomUserDetailsService.userService
+2015-02-27 18:51:27,692 DEBUG [main] Eagerly caching bean 'customUserDetailsService' to allow for resolving potential circular references
+2015-02-27 18:51:27,692 DEBUG [main] Processing injected element of bean 'customUserDetailsService': AutowiredFieldElement for private com.diego.service.UserService com.diego.auth.CustomUserDetailsService.userService
+2015-02-27 18:51:27,693 DEBUG [main] Creating shared instance of singleton bean 'userServiceImpl'
+2015-02-27 18:51:27,693 DEBUG [main] Creating instance of bean 'userServiceImpl'
+2015-02-27 18:51:27,694 DEBUG [main] Registered injected element on class [com.diego.service.UserServiceImpl]: AutowiredFieldElement for com.diego.dao.UserDao com.diego.service.UserServiceImpl.userDao
+2015-02-27 18:51:27,694 DEBUG [main] Eagerly caching bean 'userServiceImpl' to allow for resolving potential circular references
+2015-02-27 18:51:27,694 DEBUG [main] Processing injected element of bean 'userServiceImpl': AutowiredFieldElement for com.diego.dao.UserDao com.diego.service.UserServiceImpl.userDao
+2015-02-27 18:51:27,694 DEBUG [main] Creating shared instance of singleton bean 'userDaoImpl'
+2015-02-27 18:51:27,694 DEBUG [main] Creating instance of bean 'userDaoImpl'
+2015-02-27 18:51:27,694 DEBUG [main] Eagerly caching bean 'userDaoImpl' to allow for resolving potential circular references
+2015-02-27 18:51:27,694 DEBUG [main] Finished creating instance of bean 'userDaoImpl'
+2015-02-27 18:51:27,694 DEBUG [main] Autowiring by type from bean name 'userServiceImpl' to bean named 'userDaoImpl'
+2015-02-27 18:51:27,694 DEBUG [main] Finished creating instance of bean 'userServiceImpl'
+2015-02-27 18:51:27,694 DEBUG [main] Autowiring by type from bean name 'customUserDetailsService' to bean named 'userServiceImpl'
+2015-02-27 18:51:27,694 DEBUG [main] Finished creating instance of bean 'customUserDetailsService'
+2015-02-27 18:51:27,695 DEBUG [main] Creating shared instance of singleton bean 'loginController'
+2015-02-27 18:51:27,695 DEBUG [main] Creating instance of bean 'loginController'
+2015-02-27 18:51:27,695 DEBUG [main] Eagerly caching bean 'loginController' to allow for resolving potential circular references
+2015-02-27 18:51:27,695 DEBUG [main] Finished creating instance of bean 'loginController'
+2015-02-27 18:51:27,695 DEBUG [main] Creating shared instance of singleton bean 'userWebservice'
+2015-02-27 18:51:27,695 DEBUG [main] Creating instance of bean 'userWebservice'
+2015-02-27 18:51:27,696 DEBUG [main] Registered injected element on class [com.diego.controller.UserWebservice]: AutowiredFieldElement for com.diego.service.UserService com.diego.controller.UserWebservice.userService
+2015-02-27 18:51:27,696 DEBUG [main] Eagerly caching bean 'userWebservice' to allow for resolving potential circular references
+2015-02-27 18:51:27,696 DEBUG [main] Processing injected element of bean 'userWebservice': AutowiredFieldElement for com.diego.service.UserService com.diego.controller.UserWebservice.userService
+2015-02-27 18:51:27,696 DEBUG [main] Returning cached instance of singleton bean 'userServiceImpl'
+2015-02-27 18:51:27,696 DEBUG [main] Autowiring by type from bean name 'userWebservice' to bean named 'userServiceImpl'
+2015-02-27 18:51:27,696 DEBUG [main] Finished creating instance of bean 'userWebservice'
+2015-02-27 18:51:27,696 DEBUG [main] Returning cached instance of singleton bean 'userDaoImpl'
+2015-02-27 18:51:27,696 DEBUG [main] Returning cached instance of singleton bean 'userServiceImpl'
+2015-02-27 18:51:27,696 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2015-02-27 18:51:27,696 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2015-02-27 18:51:27,696 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2015-02-27 18:51:27,696 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2015-02-27 18:51:27,696 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2015-02-27 18:51:27,696 DEBUG [main] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2015-02-27 18:51:27,696 DEBUG [main] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@1422384]
+2015-02-27 18:51:27,696 DEBUG [main] Returning cached instance of singleton bean 'lifecycleProcessor'
+2015-02-27 18:51:27,697 DEBUG [main] Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2015-02-27 18:51:27,698 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2015-02-27 18:51:27,699 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2015-02-27 18:51:27,699 DEBUG [main] Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@1f52460]
+2015-02-27 18:51:27,700 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2015-02-27 18:51:27,702 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2015-02-27 18:51:27,702 DEBUG [main] Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@187f9f1]
+2015-02-27 18:51:27,706 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2015-02-27 18:51:27,713 DEBUG [main] Looking for URL mappings in application context: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Feb 27 18:51:27 IST 2015]; parent: Root WebApplicationContext
+2015-02-27 18:51:27,713 DEBUG [main] Rejected bean name 'customUserDetailsService': no URL paths identified
+2015-02-27 18:51:27,713 DEBUG [main] Rejected bean name 'loginController': no URL paths identified
+2015-02-27 18:51:27,713 DEBUG [main] Rejected bean name 'userWebservice': no URL paths identified
+2015-02-27 18:51:27,713 DEBUG [main] Rejected bean name 'userDaoImpl': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'userServiceImpl': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'environment': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'systemProperties': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'systemEnvironment': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'servletConfig': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'messageSource': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Rejected bean name 'lifecycleProcessor': no URL paths identified
+2015-02-27 18:51:27,714 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2015-02-27 18:51:27,715 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping'
+2015-02-27 18:51:27,719 DEBUG [main] Looking for URL mappings in application context: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Feb 27 18:51:27 IST 2015]; parent: Root WebApplicationContext
+2015-02-27 18:51:27,719 DEBUG [main] Rejected bean name 'customUserDetailsService': no URL paths identified
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'loginController'
+2015-02-27 18:51:27,720 INFO [main] Mapped URL path [/logout] onto handler 'loginController'
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'loginController'
+2015-02-27 18:51:27,720 INFO [main] Mapped URL path [/logout.*] onto handler 'loginController'
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'loginController'
+2015-02-27 18:51:27,720 INFO [main] Mapped URL path [/logout/] onto handler 'loginController'
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'loginController'
+2015-02-27 18:51:27,720 INFO [main] Root mapping to handler 'loginController'
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'loginController'
+2015-02-27 18:51:27,720 INFO [main] Mapped URL path [/landing] onto handler 'loginController'
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'loginController'
+2015-02-27 18:51:27,720 INFO [main] Mapped URL path [/landing.*] onto handler 'loginController'
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'loginController'
+2015-02-27 18:51:27,720 INFO [main] Mapped URL path [/landing/] onto handler 'loginController'
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'loginController'
+2015-02-27 18:51:27,720 INFO [main] Mapped URL path [/loginerr] onto handler 'loginController'
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'loginController'
+2015-02-27 18:51:27,720 INFO [main] Mapped URL path [/loginerr.*] onto handler 'loginController'
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'loginController'
+2015-02-27 18:51:27,720 INFO [main] Mapped URL path [/loginerr/] onto handler 'loginController'
+2015-02-27 18:51:27,720 DEBUG [main] Returning cached instance of singleton bean 'userWebservice'
+2015-02-27 18:51:27,720 INFO [main] Mapped URL path [/rest/getUser/{userName}] onto handler 'userWebservice'
+2015-02-27 18:51:27,721 DEBUG [main] Returning cached instance of singleton bean 'userWebservice'
+2015-02-27 18:51:27,721 INFO [main] Mapped URL path [/rest/getUser/{userName}.*] onto handler 'userWebservice'
+2015-02-27 18:51:27,721 DEBUG [main] Returning cached instance of singleton bean 'userWebservice'
+2015-02-27 18:51:27,721 INFO [main] Mapped URL path [/rest/getUser/{userName}/] onto handler 'userWebservice'
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'userDaoImpl': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'userServiceImpl': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'environment': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'systemProperties': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'systemEnvironment': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'servletConfig': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'messageSource': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Rejected bean name 'lifecycleProcessor': no URL paths identified
+2015-02-27 18:51:27,721 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping'
+2015-02-27 18:51:27,721 DEBUG [main] No HandlerMappings found in servlet 'dispatcher': using default
+2015-02-27 18:51:27,722 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2015-02-27 18:51:27,723 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2015-02-27 18:51:27,724 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2015-02-27 18:51:27,725 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2015-02-27 18:51:27,726 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter'
+2015-02-27 18:51:27,778 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter'
+2015-02-27 18:51:27,778 DEBUG [main] No HandlerAdapters found in servlet 'dispatcher': using default
+2015-02-27 18:51:27,780 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+2015-02-27 18:51:27,787 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+2015-02-27 18:51:27,788 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+2015-02-27 18:51:27,791 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+2015-02-27 18:51:27,791 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+2015-02-27 18:51:27,796 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+2015-02-27 18:51:27,797 DEBUG [main] No HandlerExceptionResolvers found in servlet 'dispatcher': using default
+2015-02-27 18:51:27,798 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2015-02-27 18:51:27,798 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2015-02-27 18:51:27,798 DEBUG [main] Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1ef3ccd]
+2015-02-27 18:51:27,801 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver'
+2015-02-27 18:51:27,831 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver'
+2015-02-27 18:51:27,831 DEBUG [main] No ViewResolvers found in servlet 'dispatcher': using default
+2015-02-27 18:51:27,833 DEBUG [main] Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2015-02-27 18:51:27,836 DEBUG [main] Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2015-02-27 18:51:27,836 DEBUG [main] Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@1a40247]
+2015-02-27 18:51:27,836 DEBUG [main] Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
+2015-02-27 18:51:27,836 DEBUG [main] Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
+2015-02-27 18:51:27,836 DEBUG [main] Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]
+2015-02-27 18:51:27,836 DEBUG [main] Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2015-02-27 18:51:27,836 DEBUG [main] Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name spring.liveBeansView.mbeanDomain is not bound in this Context
+2015-02-27 18:51:27,836 DEBUG [main] Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2015-02-27 18:51:27,836 DEBUG [main] JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name spring.liveBeansView.mbeanDomain is not bound in this Context. Returning null.
+2015-02-27 18:51:27,836 DEBUG [main] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2015-02-27 18:51:27,836 DEBUG [main] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2015-02-27 18:51:27,836 DEBUG [main] Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2015-02-27 18:51:27,836 DEBUG [main] Published WebApplicationContext of servlet 'dispatcher' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcher]
+2015-02-27 18:51:27,836 INFO [main] FrameworkServlet 'dispatcher': initialization completed in 181 ms
+2015-02-27 18:51:27,836 DEBUG [main] Servlet 'dispatcher' configured successfully
+2015-02-27 18:51:35,733 DEBUG [http-8080-2] / at position 1 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-02-27 18:51:35,733 DEBUG [http-8080-2] No HttpSession currently exists
+2015-02-27 18:51:35,733 DEBUG [http-8080-2] No SecurityContext was available from the HttpSession: null. A new one will be created.
+2015-02-27 18:51:35,735 DEBUG [http-8080-2] / at position 2 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-02-27 18:51:35,735 DEBUG [http-8080-2] / at position 3 of 10 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2015-02-27 18:51:35,735 DEBUG [http-8080-2] / at position 4 of 10 in additional filter chain; firing Filter: 'DefaultLoginPageGeneratingFilter'
+2015-02-27 18:51:35,735 DEBUG [http-8080-2] / at position 5 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-02-27 18:51:35,735 DEBUG [http-8080-2] / at position 6 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-02-27 18:51:35,736 DEBUG [http-8080-2] / at position 7 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-02-27 18:51:35,737 DEBUG [http-8080-2] Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055c2bc: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2015-02-27 18:51:35,737 DEBUG [http-8080-2] / at position 8 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-02-27 18:51:35,737 DEBUG [http-8080-2] Requested session ID 90C51A75C4A8620FB9060D253FC20568 is invalid.
+2015-02-27 18:51:35,737 DEBUG [http-8080-2] / at position 9 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-02-27 18:51:35,737 DEBUG [http-8080-2] / at position 10 of 10 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-02-27 18:51:35,738 DEBUG [http-8080-2] Checking match of request : '/'; against '/'
+2015-02-27 18:51:35,738 DEBUG [http-8080-2] Secure object: FilterInvocation: URL: /; Attributes: [permitAll]
+2015-02-27 18:51:35,738 DEBUG [http-8080-2] Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@9055c2bc: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2015-02-27 18:51:35,749 DEBUG [http-8080-2] Voter: org.springframework.security.web.access.expression.WebExpressionVoter@ea7549, returned: 1
+2015-02-27 18:51:35,749 DEBUG [http-8080-2] Authorization successful
+2015-02-27 18:51:35,749 DEBUG [http-8080-2] RunAsManager did not change Authentication object
+2015-02-27 18:51:35,749 DEBUG [http-8080-2] / reached end of additional filter chain; proceeding with original chain
+2015-02-27 18:51:35,763 DEBUG [http-8080-2] DispatcherServlet with name 'dispatcher' processing GET request for [/diego/]
+2015-02-27 18:51:35,768 DEBUG [http-8080-2] Mapping [/] to HandlerExecutionChain with handler [com.diego.controller.LoginController@1feaf06] and 1 interceptor
+2015-02-27 18:51:35,772 DEBUG [http-8080-2] Last-Modified value for [/diego/] is: -1
+2015-02-27 18:51:35,781 DEBUG [http-8080-2] Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.diego.controller.LoginController.defaultPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-02-27 18:51:35,782 INFO [http-8080-2] com.diego.controller.LoginController: ViewName: /login.jsp
+2015-02-27 18:51:35,784 DEBUG [http-8080-2] Invoking afterPropertiesSet() on bean with name '/login.jsp'
+2015-02-27 18:51:35,784 DEBUG [http-8080-2] Rendering view [org.springframework.web.servlet.view.JstlView: name '/login.jsp'; URL [/login.jsp]] in DispatcherServlet with name 'dispatcher'
+2015-02-27 18:51:35,792 DEBUG [http-8080-2] Forwarding to resource [/login.jsp] in InternalResourceView '/login.jsp'
+2015-02-27 18:51:35,896 DEBUG [http-8080-3] / at position 1 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] No HttpSession currently exists
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] No SecurityContext was available from the HttpSession: null. A new one will be created.
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] / at position 2 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] / at position 3 of 10 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] / at position 4 of 10 in additional filter chain; firing Filter: 'DefaultLoginPageGeneratingFilter'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] / at position 5 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] / at position 6 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] / at position 7 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055c2bc: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] / at position 8 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] Requested session ID 90C51A75C4A8620FB9060D253FC20568 is invalid.
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] / at position 9 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] / at position 10 of 10 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] Checking match of request : '/'; against '/'
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] Secure object: FilterInvocation: URL: /; Attributes: [permitAll]
+2015-02-27 18:51:35,897 DEBUG [http-8080-3] Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@9055c2bc: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2015-02-27 18:51:35,898 DEBUG [http-8080-3] Voter: org.springframework.security.web.access.expression.WebExpressionVoter@ea7549, returned: 1
+2015-02-27 18:51:35,898 DEBUG [http-8080-3] Authorization successful
+2015-02-27 18:51:35,898 DEBUG [http-8080-3] RunAsManager did not change Authentication object
+2015-02-27 18:51:35,898 DEBUG [http-8080-3] / reached end of additional filter chain; proceeding with original chain
+2015-02-27 18:51:35,898 DEBUG [http-8080-3] DispatcherServlet with name 'dispatcher' processing GET request for [/diego/]
+2015-02-27 18:51:35,898 DEBUG [http-8080-3] Mapping [/] to HandlerExecutionChain with handler [com.diego.controller.LoginController@1feaf06] and 1 interceptor
+2015-02-27 18:51:35,898 DEBUG [http-8080-3] Last-Modified value for [/diego/] is: -1
+2015-02-27 18:51:35,899 DEBUG [http-8080-3] Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.diego.controller.LoginController.defaultPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-02-27 18:51:35,899 INFO [http-8080-3] com.diego.controller.LoginController: ViewName: /login.jsp
+2015-02-27 18:51:35,899 DEBUG [http-8080-3] Rendering view [org.springframework.web.servlet.view.JstlView: name '/login.jsp'; URL [/login.jsp]] in DispatcherServlet with name 'dispatcher'
+2015-02-27 18:51:35,899 DEBUG [http-8080-3] Forwarding to resource [/login.jsp] in InternalResourceView '/login.jsp'
+2015-02-27 18:51:35,915 DEBUG [http-8080-3] SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2015-02-27 18:51:35,915 DEBUG [http-8080-2] SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2015-02-27 18:51:35,915 DEBUG [http-8080-2] Successfully completed request
+2015-02-27 18:51:35,916 DEBUG [http-8080-3] Successfully completed request
+2015-02-27 18:51:35,916 DEBUG [http-8080-2] Chain processed normally
+2015-02-27 18:51:35,916 DEBUG [http-8080-3] Chain processed normally
+2015-02-27 18:51:35,916 DEBUG [http-8080-2] SecurityContextHolder now cleared, as request processing completed
+2015-02-27 18:51:35,916 DEBUG [http-8080-3] SecurityContextHolder now cleared, as request processing completed
+2015-02-27 18:51:37,416 DEBUG [http-8080-3] /login at position 1 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-02-27 18:51:37,416 DEBUG [http-8080-3] HttpSession returned null object for SPRING_SECURITY_CONTEXT
+2015-02-27 18:51:37,416 DEBUG [http-8080-3] No SecurityContext was available from the HttpSession: org.apache.catalina.session.StandardSessionFacade@232697. A new one will be created.
+2015-02-27 18:51:37,416 DEBUG [http-8080-3] /login at position 2 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-02-27 18:51:37,417 DEBUG [http-8080-3] /login at position 3 of 10 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2015-02-27 18:51:37,417 DEBUG [http-8080-3] Request is to process authentication
+2015-02-27 18:51:37,428 DEBUG [http-8080-3] Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2015-02-27 18:51:37,429 INFO [http-8080-3] com.diego.auth.CustomUserDetailsService: loadUserByUsername() = diego
+2015-02-27 18:51:37,437 INFO [http-8080-3] com.diego.auth.CustomUserDetailsService: loadUserByUsername() = User [userId=null, userName=diego, password=diego, status=null, roles=[Role [roleId=0, roleName=DIEGO_ROLE, users=null, permissions=[Permission [permissionId=0, permissionName=DIEGO_PERMISSION, roles=null]]]]]
+2015-02-27 18:51:37,440 DEBUG [http-8080-3] Delegating to org.springframework.security.web.authentication.session.SessionFixationProtectionStrategy@cc9d70
+2015-02-27 18:51:37,441 DEBUG [http-8080-3] Invalidating session with Id 'EE83A12ADA6BC40169982E0055561511' and migrating attributes.
+2015-02-27 18:51:37,441 DEBUG [http-8080-3] Started new session: 6A39B37608005E0EF85C898C6CB00484
+2015-02-27 18:51:37,441 DEBUG [http-8080-3] Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31ec54f0: Principal: com.diego.auth.CustomUserDetails@1c3432a; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe9938: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: EE83A12ADA6BC40169982E0055561511; Granted Authorities: DIEGO_PERMISSION
+2015-02-27 18:51:37,441 DEBUG [http-8080-3] Using default Url: /landing
+2015-02-27 18:51:37,442 DEBUG [http-8080-3] Redirecting to '/diego/landing'
+2015-02-27 18:51:37,442 DEBUG [http-8080-3] SecurityContext stored to HttpSession: 'org.springframework.security.core.context.SecurityContextImpl@31ec54f0: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31ec54f0: Principal: com.diego.auth.CustomUserDetails@1c3432a; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe9938: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: EE83A12ADA6BC40169982E0055561511; Granted Authorities: DIEGO_PERMISSION'
+2015-02-27 18:51:37,442 DEBUG [http-8080-3] SecurityContextHolder now cleared, as request processing completed
+2015-02-27 18:51:37,446 DEBUG [http-8080-3] /landing at position 1 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-02-27 18:51:37,446 DEBUG [http-8080-3] Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@31ec54f0: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31ec54f0: Principal: com.diego.auth.CustomUserDetails@1c3432a; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe9938: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: EE83A12ADA6BC40169982E0055561511; Granted Authorities: DIEGO_PERMISSION'
+2015-02-27 18:51:37,446 DEBUG [http-8080-3] /landing at position 2 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] /landing at position 3 of 10 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] /landing at position 4 of 10 in additional filter chain; firing Filter: 'DefaultLoginPageGeneratingFilter'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] /landing at position 5 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] /landing at position 6 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] /landing at position 7 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31ec54f0: Principal: com.diego.auth.CustomUserDetails@1c3432a; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe9938: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: EE83A12ADA6BC40169982E0055561511; Granted Authorities: DIEGO_PERMISSION'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] /landing at position 8 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] /landing at position 9 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] /landing at position 10 of 10 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] Checking match of request : '/landing'; against '/'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] Checking match of request : '/landing'; against '/login.jsp'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] Checking match of request : '/landing'; against '/loginerr'
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] Secure object: FilterInvocation: URL: /landing; Attributes: [hasRole('DIEGO_PERMISSION')]
+2015-02-27 18:51:37,447 DEBUG [http-8080-3] Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31ec54f0: Principal: com.diego.auth.CustomUserDetails@1c3432a; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe9938: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: EE83A12ADA6BC40169982E0055561511; Granted Authorities: DIEGO_PERMISSION
+2015-02-27 18:51:37,458 DEBUG [http-8080-3] Voter: org.springframework.security.web.access.expression.WebExpressionVoter@ea7549, returned: 1
+2015-02-27 18:51:37,458 DEBUG [http-8080-3] Authorization successful
+2015-02-27 18:51:37,458 DEBUG [http-8080-3] RunAsManager did not change Authentication object
+2015-02-27 18:51:37,458 DEBUG [http-8080-3] /landing reached end of additional filter chain; proceeding with original chain
+2015-02-27 18:51:37,458 DEBUG [http-8080-3] DispatcherServlet with name 'dispatcher' processing GET request for [/diego/landing]
+2015-02-27 18:51:37,459 DEBUG [http-8080-3] Mapping [/landing] to HandlerExecutionChain with handler [com.diego.controller.LoginController@1feaf06] and 1 interceptor
+2015-02-27 18:51:37,459 DEBUG [http-8080-3] Last-Modified value for [/diego/landing] is: -1
+2015-02-27 18:51:37,459 DEBUG [http-8080-3] Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.diego.controller.LoginController.landing(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-02-27 18:51:37,459 INFO [http-8080-3] com.diego.controller.LoginController: ViewName: /welcome.jsp
+2015-02-27 18:51:37,460 DEBUG [http-8080-3] Invoking afterPropertiesSet() on bean with name '/welcome.jsp'
+2015-02-27 18:51:37,460 DEBUG [http-8080-3] Rendering view [org.springframework.web.servlet.view.JstlView: name '/welcome.jsp'; URL [/welcome.jsp]] in DispatcherServlet with name 'dispatcher'
+2015-02-27 18:51:37,460 DEBUG [http-8080-3] Forwarding to resource [/welcome.jsp] in InternalResourceView '/welcome.jsp'
+2015-02-27 18:51:37,464 DEBUG [http-8080-3] Successfully completed request
+2015-02-27 18:51:37,464 DEBUG [http-8080-3] Chain processed normally
+2015-02-27 18:51:37,465 DEBUG [http-8080-3] SecurityContextHolder now cleared, as request processing completed
+2015-02-27 18:51:39,929 DEBUG [http-8080-3] /rest/getUser/diego at position 1 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-02-27 18:51:39,929 DEBUG [http-8080-3] Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@31ec54f0: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31ec54f0: Principal: com.diego.auth.CustomUserDetails@1c3432a; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe9938: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: EE83A12ADA6BC40169982E0055561511; Granted Authorities: DIEGO_PERMISSION'
+2015-02-27 18:51:39,929 DEBUG [http-8080-3] /rest/getUser/diego at position 2 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] /rest/getUser/diego at position 3 of 10 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] /rest/getUser/diego at position 4 of 10 in additional filter chain; firing Filter: 'DefaultLoginPageGeneratingFilter'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] /rest/getUser/diego at position 5 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] /rest/getUser/diego at position 6 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] /rest/getUser/diego at position 7 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31ec54f0: Principal: com.diego.auth.CustomUserDetails@1c3432a; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe9938: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: EE83A12ADA6BC40169982E0055561511; Granted Authorities: DIEGO_PERMISSION'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] /rest/getUser/diego at position 8 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] /rest/getUser/diego at position 9 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] /rest/getUser/diego at position 10 of 10 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] Checking match of request : '/rest/getuser/diego'; against '/'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] Checking match of request : '/rest/getuser/diego'; against '/login.jsp'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] Checking match of request : '/rest/getuser/diego'; against '/loginerr'
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] Secure object: FilterInvocation: URL: /rest/getUser/diego; Attributes: [hasRole('DIEGO_PERMISSION')]
+2015-02-27 18:51:39,930 DEBUG [http-8080-3] Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@31ec54f0: Principal: com.diego.auth.CustomUserDetails@1c3432a; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe9938: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: EE83A12ADA6BC40169982E0055561511; Granted Authorities: DIEGO_PERMISSION
+2015-02-27 18:51:39,931 DEBUG [http-8080-3] Voter: org.springframework.security.web.access.expression.WebExpressionVoter@ea7549, returned: 1
+2015-02-27 18:51:39,931 DEBUG [http-8080-3] Authorization successful
+2015-02-27 18:51:39,931 DEBUG [http-8080-3] RunAsManager did not change Authentication object
+2015-02-27 18:51:39,931 DEBUG [http-8080-3] /rest/getUser/diego reached end of additional filter chain; proceeding with original chain
+2015-02-27 18:51:39,931 DEBUG [http-8080-3] DispatcherServlet with name 'dispatcher' processing GET request for [/diego/rest/getUser/diego]
+2015-02-27 18:51:39,932 DEBUG [http-8080-3] Matching patterns for request [/rest/getUser/diego] are [/rest/getUser/{userName}]
+2015-02-27 18:51:39,933 DEBUG [http-8080-3] URI Template variables for request [/rest/getUser/diego] are {userName=diego}
+2015-02-27 18:51:39,934 DEBUG [http-8080-3] Mapping [/rest/getUser/diego] to HandlerExecutionChain with handler [com.diego.controller.UserWebservice@1214626] and 2 interceptors
+2015-02-27 18:51:39,934 DEBUG [http-8080-3] Last-Modified value for [/diego/rest/getUser/diego] is: -1
+2015-02-27 18:51:39,951 DEBUG [http-8080-3] Invoking request handler method: public com.diego.model.User com.diego.controller.UserWebservice.getUser(java.lang.String)
+2015-02-27 18:51:39,957 DEBUG [http-8080-3] Invoking afterPropertiesSet() on bean with name 'rest/getUser/diego'
+2015-02-27 18:51:39,957 DEBUG [http-8080-3] Rendering view [org.springframework.web.servlet.view.JstlView: name 'rest/getUser/diego'; URL [rest/getUser/diego]] in DispatcherServlet with name 'dispatcher'
+2015-02-27 18:51:39,957 DEBUG [http-8080-3] Added model object 'user' of type [com.diego.model.User] to request in view with name 'rest/getUser/diego'
+2015-02-27 18:51:39,957 DEBUG [http-8080-3] Added model object 'org.springframework.validation.BindingResult.user' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'rest/getUser/diego'
+2015-02-27 18:51:39,958 DEBUG [http-8080-3] Forwarding to resource [rest/getUser/diego] in InternalResourceView 'rest/getUser/diego'
+2015-02-27 18:51:39,958 DEBUG [http-8080-3] DispatcherServlet with name 'dispatcher' processing GET request for [/diego/rest/getUser/rest/getUser/diego]
+2015-02-27 18:51:39,958 WARN [http-8080-3] No mapping found for HTTP request with URI [/diego/rest/getUser/rest/getUser/diego] in DispatcherServlet with name 'dispatcher'
+2015-02-27 18:51:39,958 DEBUG [http-8080-3] Successfully completed request
+2015-02-27 18:51:39,958 DEBUG [http-8080-3] Successfully completed request
+2015-02-27 18:51:39,958 DEBUG [http-8080-3] Chain processed normally
+2015-02-27 18:51:39,958 DEBUG [http-8080-3] SecurityContextHolder now cleared, as request processing completed

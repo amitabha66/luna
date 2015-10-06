@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='D:\Amitabha\test\eclipse-jee-luna-R-win32\eclipse\.eclipseextension' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1444111471938'/>
+    <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
+    <property name='org.eclipse.update.site.list' value=''/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='5'>
+    <artifact classifier='osgi.bundle' id='org.tmatesoft.sqljet' version='1.1.10.r1317_v20140121_0107'>
+      <properties size='2'>
+        <property name='artifact.size' value='914445'/>
+        <property name='download.size' value='914445'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Amitabha/test/eclipse-jee-luna-R-win32/eclipse/plugins/org.tmatesoft.sqljet_1.1.10.r1317_v20140121_0107.jar'/>
+        <property name='file.name' value='D:\Amitabha\test\eclipse-jee-luna-R-win32\eclipse\plugins\org.tmatesoft.sqljet_1.1.10.r1317_v20140121_0107.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.tmatesoft.svnkit' version='1.8.7.r10376_v20141223_2131'>
+      <properties size='2'>
+        <property name='artifact.size' value='6007807'/>
+        <property name='download.size' value='6007807'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Amitabha/test/eclipse-jee-luna-R-win32/eclipse/plugins/org.tmatesoft.svnkit_1.8.7.r10376_v20141223_2131.jar'/>
+        <property name='file.name' value='D:\Amitabha\test\eclipse-jee-luna-R-win32\eclipse\plugins\org.tmatesoft.svnkit_1.8.7.r10376_v20141223_2131.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.versiontree' version='1.7.3.201312051751'>
+      <properties size='2'>
+        <property name='artifact.size' value='130532'/>
+        <property name='download.size' value='130532'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Amitabha/test/eclipse-jee-luna-R-win32/eclipse/plugins/net.sf.versiontree_1.7.3.201312051751.jar'/>
+        <property name='file.name' value='D:\Amitabha\test\eclipse-jee-luna-R-win32\eclipse\plugins\net.sf.versiontree_1.7.3.201312051751.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.java.dev.jna' version='4.1.0.v20140626_1915'>
+      <properties size='2'>
+        <property name='artifact.size' value='916798'/>
+        <property name='download.size' value='916798'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Amitabha/test/eclipse-jee-luna-R-win32/eclipse/plugins/net.java.dev.jna_4.1.0.v20140626_1915.jar'/>
+        <property name='file.name' value='D:\Amitabha\test\eclipse-jee-luna-R-win32\eclipse\plugins\net.java.dev.jna_4.1.0.v20140626_1915.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.trilead.ssh2' version='1.0.0.build217_r155_v20130603_1628'>
+      <properties size='2'>
+        <property name='artifact.size' value='250793'/>
+        <property name='download.size' value='250793'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/D:/Amitabha/test/eclipse-jee-luna-R-win32/eclipse/plugins/com.trilead.ssh2_1.0.0.build217_r155_v20130603_1628.jar'/>
+        <property name='file.name' value='D:\Amitabha\test\eclipse-jee-luna-R-win32\eclipse\plugins\com.trilead.ssh2_1.0.0.build217_r155_v20130603_1628.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

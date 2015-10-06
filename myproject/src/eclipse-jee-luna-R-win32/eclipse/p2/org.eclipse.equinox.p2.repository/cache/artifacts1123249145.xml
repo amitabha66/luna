@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='CVS VersionTree Plugin Updates' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1386265944240'/>
+    <property name='p2.compressed' value='true'/>
+    <property name='publishPackFilesAsSiblings' value='true'/>
+  </properties>
+  <mappings size='5'>
+    <rule filter='(&amp; (classifier=osgi.bundle) (format=packed))' output='${repoUrl}/plugins/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature) (format=packed))' output='${repoUrl}/features/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='2'>
+    <artifact classifier='osgi.bundle' id='net.sf.versiontree' version='1.7.3.201312051751'>
+      <properties size='5'>
+        <property name='artifact.size' value='130532'/>
+        <property name='download.size' value='130532'/>
+        <property name='maven-groupId' value='net.sf.versiontree'/>
+        <property name='maven-artifactId' value='net.sf.versiontree'/>
+        <property name='maven-version' value='1.7.3-SNAPSHOT'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sf.versiontree' version='1.7.3.201312051751'>
+      <properties size='6'>
+        <property name='artifact.size' value='6583'/>
+        <property name='download.size' value='6583'/>
+        <property name='maven-groupId' value='net.sf.versiontree.features'/>
+        <property name='maven-artifactId' value='net.sf.versiontree'/>
+        <property name='maven-version' value='1.7.3-SNAPSHOT'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

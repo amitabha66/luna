@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='update site: jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1422423935040'/>
+    <property name='site.checksum' value='2621753080'/>
+  </properties>
+  <references size='2'>
+    <repository uri='http://eclipse.tmatesoft.com/svnkit/1.8.x/' url='http://eclipse.tmatesoft.com/svnkit/1.8.x/' type='0' options='0'/>
+    <repository uri='http://eclipse.tmatesoft.com/svnkit/1.8.x/' url='http://eclipse.tmatesoft.com/svnkit/1.8.x/' type='1' options='0'/>
+  </references>
+  <units size='10'>
+    <unit id='org.tmatesoft.sqljet' version='1.1.10.r1317_v20140121_0107' singleton='false'>
+      <update id='org.tmatesoft.sqljet' range='[0.0.0,1.1.10.r1317_v20140121_0107)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.tmatesoft.sqljet' version='1.1.10.r1317_v20140121_0107'/>
+        <provided namespace='osgi.bundle' name='org.tmatesoft.sqljet' version='1.1.10.r1317_v20140121_0107'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.tmatesoft.sqljet' version='1.1.10.r1317_v20140121_0107'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.tmatesoft.sqljet&#xA;Bundle-Version: 1.1.10.r1317_v20140121_0107&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.java.dev.jna.feature.jar' version='4.1.0.v20140626_1915'>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='JNA Library'/>
+        <property name='org.eclipse.equinox.p2.description' value='JNA Library'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://jna.dev.java.net/'/>
+        <property name='df_LT.description' value='JNA provides Java programs easy access to native shared libraries (DLLs on Windows) without writing anything but Java code - no JNI or native code is required. This functionality is comparable to Windows&amp;apos; Platform/Invoke and Python&amp;apos;s ctypes. Access is dynamic at runtime without code generation.'/>
+        <property name='df_LT.license' value='Copyright (c) 2008 Timothy Wall, All Rights Reserved&#xA;&#xA;This library is free software; you can redistribute it and/or&#xA;modify it under the terms of the GNU Lesser General Public&#xA;License as published by the Free Software Foundation; either&#xA;version 2.1 of the License, or (at your option) any later version.&#xA;&#xA;This library is distributed in the hope that it will be useful,&#xA;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xA;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU&#xA;Lesser General Public License for more details.'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.java.dev.jna.feature.jar' version='4.1.0.v20140626_1915'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.java.dev.jna' version='4.1.0.v20140626_1915'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.java.dev.jna' version='4.1.0.v20140626_1915'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html' url='http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html'>
+          %license
+        </license>
+      </licenses>
+      <copyright uri='http://jna.dev.java.net/' url='http://jna.dev.java.net/'>
+        Copyright (c) 2008 Timothy Wall, All Rights Reserved
+      </copyright>
+    </unit>
+    <unit id='jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/site.xml.SVNKit Library' version='1.0.0.27E7CcMUzvE8k539GENr735A5779M7595'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Core SVNKit Library (required)'/>
+        <property name='org.eclipse.equinox.p2.description' value='SVNKit Library'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/site.xml.SVNKit Library' version='1.0.0.27E7CcMUzvE8k539GENr735A5779M7595'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.tmatesoft.svnkit.feature.group' range='[1.8.7.r10376_v20141223_2131,1.8.7.r10376_v20141223_2131]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='net.java.dev.jna.feature.group' version='4.1.0.v20140626_1915' singleton='false'>
+      <update id='net.java.dev.jna.feature.group' range='[0.0.0,4.1.0.v20140626_1915)' severity='0'/>
+      <properties size='6'>
+        <property name='org.eclipse.equinox.p2.name' value='JNA Library'/>
+        <property name='org.eclipse.equinox.p2.description' value='JNA Library'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://jna.dev.java.net/'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.description' value='JNA provides Java programs easy access to native shared libraries (DLLs on Windows) without writing anything but Java code - no JNI or native code is required. This functionality is comparable to Windows&amp;apos; Platform/Invoke and Python&amp;apos;s ctypes. Access is dynamic at runtime without code generation.'/>
+        <property name='df_LT.license' value='Copyright (c) 2008 Timothy Wall, All Rights Reserved&#xA;&#xA;This library is free software; you can redistribute it and/or&#xA;modify it under the terms of the GNU Lesser General Public&#xA;License as published by the Free Software Foundation; either&#xA;version 2.1 of the License, or (at your option) any later version.&#xA;&#xA;This library is distributed in the hope that it will be useful,&#xA;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xA;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU&#xA;Lesser General Public License for more details.'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.java.dev.jna.feature.group' version='4.1.0.v20140626_1915'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.java.dev.jna' range='[4.1.0.v20140626_1915,4.1.0.v20140626_1915]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.java.dev.jna.feature.jar' range='[4.1.0.v20140626_1915,4.1.0.v20140626_1915]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html' url='http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html'>
+          %license
+        </license>
+      </licenses>
+      <copyright uri='http://jna.dev.java.net/' url='http://jna.dev.java.net/'>
+        Copyright (c) 2008 Timothy Wall, All Rights Reserved
+      </copyright>
+    </unit>
+    <unit id='com.trilead.ssh2' version='1.0.0.build217_r155_v20130603_1628' singleton='false'>
+      <update id='com.trilead.ssh2' range='[0.0.0,1.0.0.build217_r155_v20130603_1628)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.trilead.ssh2' version='1.0.0.build217_r155_v20130603_1628'/>
+        <provided namespace='osgi.bundle' name='com.trilead.ssh2' version='1.0.0.build217_r155_v20130603_1628'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.trilead.ssh2' version='1.0.0.build217_r155_v20130603_1628'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.trilead.ssh2&#xA;Bundle-Version: 1.0.0.build217_r155_v20130603_1628&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.java.dev.jna' version='4.1.0.v20140626_1915' singleton='false'>
+      <update id='net.java.dev.jna' range='[0.0.0,4.1.0.v20140626_1915)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.java.dev.jna' version='4.1.0.v20140626_1915'/>
+        <provided namespace='osgi.bundle' name='net.java.dev.jna' version='4.1.0.v20140626_1915'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.java.dev.jna' version='4.1.0.v20140626_1915'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.java.dev.jna&#xA;Bundle-Version: 4.1.0.v20140626_1915&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/site.xml.JNA Library' version='1.0.0.781-cK8pbh8s735A3E7EM5K5C'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Optional JNA Library (recommended)'/>
+        <property name='org.eclipse.equinox.p2.description' value='Includes JNA Library plugin which is optionally used by SVNKit to improve performance of certain low-level filesystem operations and to implement some additional features. JNA Library is licensed under the terms of LGPL. It is strongly recommened to install JNA Library, unless you could not accept LGPL software in your environment.'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='jar:file:/D:/Amitabha/Softwares/org.tmatesoft.svn_1.8.7.eclipse.zip!/site.xml.JNA Library' version='1.0.0.781-cK8pbh8s735A3E7EM5K5C'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.java.dev.jna.feature.group' range='[4.1.0.v20140626_1915,4.1.0.v20140626_1915]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='org.tmatesoft.svnkit' version='1.8.7.r10376_v20141223_2131' singleton='false'>
+      <update id='org.tmatesoft.svnkit' range='[0.0.0,1.8.7.r10376_v20141223_2131)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.tmatesoft.svnkit' version='1.8.7.r10376_v20141223_2131'/>
+        <provided namespace='osgi.bundle' name='org.tmatesoft.svnkit' version='1.8.7.r10376_v20141223_2131'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.tmatesoft.svnkit' version='1.8.7.r10376_v20141223_2131'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.tmatesoft.svnkit&#xA;Bundle-Version: 1.8.7.r10376_v20141223_2131&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.tmatesoft.svnkit.feature.jar' version='1.8.7.r10376_v20141223_2131'>
+      <properties size='6'>
+        <property name='org.eclipse.equinox.p2.name' value='SVNKit Library'/>
+        <property name='org.eclipse.equinox.p2.description' value='%description'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://svnkit.com/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='TMate Software'/>
+        <property name='df_LT.description' value='SVNKit is a pure java Subversion client library that may be used through its own API or serve as a transparent replacement of native javahl bindings.'/>
+        <property name='df_LT.license' value='The TMate Open Source License&#xA;&#xA;This license applies to all portions of TMate SVNKit library, which&#xA;are not externally-maintained libraries (e.g. Trilead SSH library).&#xA;&#xA;All the source code and compiled classes in package org.tigris.subversion.javahl&#xA;except SvnClient class are covered by the license in JAVAHL-LICENSE file&#xA;&#xA;Copyright (c) 2004-2011 TMate Software. All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification,&#xA;are permitted provided that the following conditions are met:&#xA;&#xA;* Redistributions of source code must retain the above copyright notice,&#xA;this list of conditions and the following disclaimer.&#xA;&#xA;* Redistributions in binary form must reproduce the above copyright notice,&#xA;this list of conditions and the following disclaimer in the documentation &#xA;and/or other materials provided with the distribution.&#xA;&#xA;* Redistributions in any form must be accompanied by information on how to&#xA;obtain complete source code for the software that uses SVNKit and any &#xA;accompanying software that uses the software that uses SVNKit. The source&#xA;code must either be included in the distribution or be available for no &#xA;more than the cost of distribution plus a nominal fee, and must be freely &#xA;redistributable under reasonable conditions. For an executable file, complete&#xA;source code means the source code for all modules it contains. It does not &#xA;include source code for modules or files that typically accompany the major &#xA;components of the operating system on which the executable file runs.&#xA;&#xA;* Redistribution in any form without redistributing source code for software&#xA;that uses SVNKit is possible only when such redistribution is explictly permitted&#xA;by TMate Software. Please, contact TMate Software at support@svnkit.com to &#xA;get such permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&apos;&apos; AND ANY EXPRESS OR IMPLIED&#xA;WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF &#xA;MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE&#xA;DISCLAIMED. &#xA;&#xA;IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT,&#xA;INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT&#xA;LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE&#xA;OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF &#xA;ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.tmatesoft.svnkit.feature.jar' version='1.8.7.r10376_v20141223_2131'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.tmatesoft.svnkit' version='1.8.7.r10376_v20141223_2131'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.tmatesoft.svnkit' version='1.8.7.r10376_v20141223_2131'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='' url=''>
+          %license
+        </license>
+      </licenses>
+      <copyright uri='http://svnkit.com/' url='http://svnkit.com/'>
+        (c) 2004-2011, TMate Software Ltd.
+      </copyright>
+    </unit>
+    <unit id='org.tmatesoft.svnkit.feature.group' version='1.8.7.r10376_v20141223_2131' singleton='false'>
+      <update id='org.tmatesoft.svnkit.feature.group' range='[0.0.0,1.8.7.r10376_v20141223_2131)' severity='0'/>
+      <properties size='7'>
+        <property name='org.eclipse.equinox.p2.name' value='SVNKit Library'/>
+        <property name='org.eclipse.equinox.p2.description' value='%description'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://svnkit.com/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='TMate Software'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.description' value='SVNKit is a pure java Subversion client library that may be used through its own API or serve as a transparent replacement of native javahl bindings.'/>
+        <property name='df_LT.license' value='The TMate Open Source License&#xA;&#xA;This license applies to all portions of TMate SVNKit library, which&#xA;are not externally-maintained libraries (e.g. Trilead SSH library).&#xA;&#xA;All the source code and compiled classes in package org.tigris.subversion.javahl&#xA;except SvnClient class are covered by the license in JAVAHL-LICENSE file&#xA;&#xA;Copyright (c) 2004-2011 TMate Software. All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification,&#xA;are permitted provided that the following conditions are met:&#xA;&#xA;* Redistributions of source code must retain the above copyright notice,&#xA;this list of conditions and the following disclaimer.&#xA;&#xA;* Redistributions in binary form must reproduce the above copyright notice,&#xA;this list of conditions and the following disclaimer in the documentation &#xA;and/or other materials provided with the distribution.&#xA;&#xA;* Redistributions in any form must be accompanied by information on how to&#xA;obtain complete source code for the software that uses SVNKit and any &#xA;accompanying software that uses the software that uses SVNKit. The source&#xA;code must either be included in the distribution or be available for no &#xA;more than the cost of distribution plus a nominal fee, and must be freely &#xA;redistributable under reasonable conditions. For an executable file, complete&#xA;source code means the source code for all modules it contains. It does not &#xA;include source code for modules or files that typically accompany the major &#xA;components of the operating system on which the executable file runs.&#xA;&#xA;* Redistribution in any form without redistributing source code for software&#xA;that uses SVNKit is possible only when such redistribution is explictly permitted&#xA;by TMate Software. Please, contact TMate Software at support@svnkit.com to &#xA;get such permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS&apos;&apos; AND ANY EXPRESS OR IMPLIED&#xA;WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF &#xA;MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE&#xA;DISCLAIMED. &#xA;&#xA;IN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT,&#xA;INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT&#xA;LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR &#xA;PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF &#xA;LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE&#xA;OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF &#xA;ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.tmatesoft.svnkit.feature.group' version='1.8.7.r10376_v20141223_2131'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='4'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.tmatesoft.svnkit' range='[1.8.7.r10376_v20141223_2131,1.8.7.r10376_v20141223_2131]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.tmatesoft.sqljet' range='[1.1.10.r1317_v20140121_0107,1.1.10.r1317_v20140121_0107]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.trilead.ssh2' range='[1.0.0.build217_r155_v20130603_1628,1.0.0.build217_r155_v20130603_1628]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.tmatesoft.svnkit.feature.jar' range='[1.8.7.r10376_v20141223_2131,1.8.7.r10376_v20141223_2131]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='' url=''>
+          %license
+        </license>
+      </licenses>
+      <copyright uri='http://svnkit.com/' url='http://svnkit.com/'>
+        (c) 2004-2011, TMate Software Ltd.
+      </copyright>
+    </unit>
+  </units>
+</repository>

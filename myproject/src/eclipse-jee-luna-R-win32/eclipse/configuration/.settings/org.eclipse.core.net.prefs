@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+nonProxiedHosts=ecobertura.johoop.de|subversion.assembla.com|localhost|127.0.0.1
+org.eclipse.core.net.hasMigrated=true
+proxiesEnabled=false
+proxyData/HTTP/hasAuth=true
+proxyData/HTTP/host=proxy.tcs.com
+proxyData/HTTP/port=8080
+proxyData/HTTPS/hasAuth=true
+proxyData/HTTPS/host=proxy.tcs.com
+proxyData/HTTPS/port=8080
+systemProxiesEnabled=false
